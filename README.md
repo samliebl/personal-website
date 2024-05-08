@@ -8,4 +8,4 @@ It's just basic HTML and CSS.
 
 Thanks for visiting.
 
-<small>&copy; Sam Liebl. 2024.</small>
+&copy; Sam Liebl. 2024.

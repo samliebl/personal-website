@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: var(--text);
     font-size: 1em;
     line-height: 1.4;
 }
@@ -25,12 +25,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: var(--selection);
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: var(--selection);
     text-shadow: none;
 }
 
@@ -42,7 +42,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--silver);
     margin: 1em 0;
     padding: 0;
 }
@@ -83,6 +83,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+html,
+body {
+
+    /* For WebKit (Chrome, Safari) */
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* For Firefox */
+    font-smoothing: antialiased;
+    /* For Edge */
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+
+/* Colors as variables */
+:root {
+    /* HTML5 Boilerplate */
+    --selection: hsla(213, 92%, 85%, 1);
+    /* Bootstrap */
+    --text: hsla(210, 10%, 23%, 1);
+    /* colors.css v0.2.0 */
+    --navy: hsla(216, 100%, 16%, 1);
+    --blue: hsla(225, 100%, 42%, 1);
+    --aqua: hsla(187, 100%, 49%, 1);
+    --teal: hsla(180, 100%, 40%, 1);
+    --olive: hsla(147, 100%, 34%, 1);
+    --green: hsla(114, 100%, 38%, 1);
+    --lime: hsla(68, 100%, 44%, 1);
+    --yellow: hsla(48, 100%, 50%, 1);
+    --orange: hsla(24, 100%, 50%, 1);
+    --red: hsla(355, 100%, 46%, 1);
+    --maroon: hsla(358, 100%, 14%, 1);
+    --fuchsia: hsla(319, 100%, 50%, 1);
+    --purple: hsla(262, 100%, 50%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --silver: hsla(0, 0%, 47%, 1);
+    --gray: hsla(0, 0%, 20%, 1);
+    --black: hsla(0, 0%, 0%, 1);
+    /* My colors */
+    --whitesmoke: hsla(0, 0%, 96%, 1);
+}
+
+.nolist {
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+h5 {
+    color: var(--silver);
+    font-style: italic;
+    margin: 0 0 1rem 0;
+}
 
 .container {
     padding: 1rem 2rem;
@@ -158,7 +214,7 @@ h4 {
 }
 
 h5 {
-    color: #666;
+    color: var(--silver);
     font-style: italic;
     margin: 0 0 1rem 0;
 }
@@ -201,6 +257,33 @@ h4+h5 {
     width: 8em;
 }
 
+h4+h5 {
+    width: 8em;
+}
+
+a {
+    color: var(--blue);
+}
+
+a:visited {
+    color: var(--navy);
+
+}
+
+a:hover {
+    filter: brightness(2.2);
+
+}
+
+a:active {
+    color: var(--aqua);
+
+}
+
+cite {
+    font-style: normal;
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -221,20 +304,33 @@ h4+h5 {
  *
  * 1. For long content, line feeds are not interpreted as spaces and small width
  *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ *    https://medium.com/@jessebeach/
+      beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
 .visually-hidden {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
+
+    *,
+    *::before,
+    *::after {
+        background: var(--white) !important;
+        color: var(--black) !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+pre,
+blockquote {
+    border: 1px solid #999;
+    border: 1px solid var(--whitesmoke);
+    page-break-inside: avoid;
+}
+
+
+h3 {
+    page-break-after: avoid;
 }
 
 /*

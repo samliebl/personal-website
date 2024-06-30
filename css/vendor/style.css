@@ -289,16 +289,40 @@ cite {
 
 }
 
-.inline-note {
-}
-
 .in-item-note {
     line-height: 1.15;
     padding: 0 0 0 2rem;
 }
 
 .in-item-note::before {
-    content: "*";
+    content: "\002A";
+}
+
+.fragment-break {
+    width: 100%;
+    text-align: center;
+}
+
+.fragment-break::before {
+    content: "\2042";
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list ul {
+    list-style-type: disc;
+    padding: 0 0 0 2rem;
+}
+
+.skills-list ul ul {
+    list-style-type: circle;
+}
+
+.skills-list ul ul ul {
+    list-style-type: square;
 }
 
 /* ==========================================================================

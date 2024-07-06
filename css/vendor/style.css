@@ -308,6 +308,15 @@ cite {
     content: "\2042";
 }
 
+.section-break {
+    width: 100%;
+    text-align: center;
+}
+
+.section-break::before {
+    content: "\2217\2217\2217\2217\2217";
+}
+
 .skills-list {
     list-style-type: none;
     padding: 0;

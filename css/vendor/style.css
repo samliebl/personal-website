@@ -121,6 +121,7 @@ body {
     --silver: hsla(0, 0%, 47%, 1);
     --gray: hsla(0, 0%, 20%, 1);
     --black: hsla(0, 0%, 0%, 1);
+    --moon-gray: hsla(0, 0%, 80%, 1);
     /* My colors */
     --whitesmoke: hsla(0, 0%, 96%, 1);
 }
@@ -327,6 +328,16 @@ cite {
 
 .mt1 {
     margin-top: 1rem;
+}
+
+aside.notes {
+    font-size: 0.8rem;
+    border: var(--moon-gray) 0.0625rem solid;
+    max-width: 30rem;
+}
+
+aside.notes + .top {
+    margin: 1rem 0 0 0;
 }
 
 /* ==========================================================================

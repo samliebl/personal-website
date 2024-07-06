@@ -124,6 +124,8 @@ body {
     --moon-gray: hsla(0, 0%, 80%, 1);
     /* My colors */
     --whitesmoke: hsla(0, 0%, 96%, 1);
+    /* My styles */
+    --measure-width: 36rem;
 }
 
 .nolist {
@@ -239,7 +241,7 @@ h4+h5 {
 }
 
 .measure {
-    max-width: 36rem;
+    max-width: var(--measure-width);
 }
 
 .w0 {
@@ -300,7 +302,7 @@ cite {
 }
 
 .fragment-break {
-    width: 100%;
+    width: calc(var(--measure-width)/5);
     text-align: center;
 }
 
@@ -309,12 +311,12 @@ cite {
 }
 
 .section-break {
-    width: 100%;
+    width: calc(var(--measure-width)/5);
     text-align: center;
 }
 
 .section-break::before {
-    content: "\2217\2217\2217\2217\2217";
+    content: "\002A\2003\002A\2003\002A";
 }
 
 .skills-list {

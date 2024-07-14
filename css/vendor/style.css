@@ -341,6 +341,10 @@ cite {
     margin-top: 1rem;
 }
 
+.mb1 {
+    margin-bottom: 1rem;
+}
+
 aside.notes {
     font-size: 0.8rem;
     border: var(--moon-gray) 0.0625rem solid;
@@ -353,6 +357,15 @@ aside.notes + .top {
 
 .sc {
     font-variant: small-caps;
+}
+
+.level {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.level * {
+    margin: 0 1rem 0 0;
 }
 
 /* ==========================================================================
@@ -451,8 +464,14 @@ h3 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+}
+@media only screen and (max-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+    .level p+p {
+        margin: 1rem 0 0 0;
+    }
 }
 
 @media print,

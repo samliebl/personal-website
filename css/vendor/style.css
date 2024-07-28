@@ -209,7 +209,8 @@ h6 {
 }
 
 h3,
-h4 {
+h4,
+h5 {
     font-size: 1rem;
 }
 
@@ -221,10 +222,17 @@ h4 {
     margin: 1rem 0 0.5rem 0;
 }
 
-h5 {
+.poem h5 {
     color: var(--silver);
     font-style: italic;
     margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+}
+
+h5 {
+    color: inherit;
+    font-style: inherit;
+    margin: inherit;
 }
 
 h4+h5 {

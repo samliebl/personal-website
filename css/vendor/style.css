@@ -126,6 +126,11 @@ body {
     --whitesmoke: hsla(0, 0%, 96%, 1);
     /* My styles */
     --measure-width: 36rem;
+    /* Thanks to Inter by https://rsms.me/ */
+    --sans-serif: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --inter: Inter, sans-serif;
+    --inter-font-feature-settings: 'liga'1, 'calt'1;
+    /* fix for Chrome */
 }
 
 .nolist {
@@ -304,6 +309,7 @@ cite {
 .fragment-break {
     width: calc(var(--measure-width)/5);
     text-align: center;
+    margin: 0 0 1rem 0;
 }
 
 .fragment-break::before {
@@ -351,7 +357,7 @@ aside.notes {
     max-width: 30rem;
 }
 
-aside.notes + .top {
+aside.notes+.top {
     margin: 1rem 0 0 0;
 }
 
@@ -364,8 +370,24 @@ aside.notes + .top {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .level * {
     margin: 0 1rem 0 0;
+}
+
+.sans-serif {
+    font-family: var(--sans-serif);
+}
+
+.inter {
+    font-family: var(--inter);
+    font-feature-settings: var(--inter-font-feature-settings);
+}
+
+@supports (font-variation-settings: normal) {
+    .inter {
+        font-family: InterVariable, sans-serif;
+    }
 }
 
 /* ==========================================================================
@@ -464,10 +486,12 @@ h3 {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
+@media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
+
 @media only screen and (max-width: 35em) {
+
     /* Style adjustments for viewports that meet the condition */
     .level p+p {
         margin: 1rem 0 0 0;

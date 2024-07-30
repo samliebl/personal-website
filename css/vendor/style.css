@@ -256,6 +256,11 @@ h4+h5 {
     margin: 0 0 1rem 0;
 }
 
+.fragment-break+.stanza.prose {
+    text-indent: 0;
+    margin: 0 0 1rem 0;
+}
+
 .poem {
     margin: 0 0 1rem 0;
 }
@@ -409,6 +414,11 @@ aside.notes+.top {
     .inter {
         font-family: InterVariable, sans-serif;
     }
+}
+
+span.inter {
+    font-size: 0.9rem;
+    line-height: 0;
 }
 
 /* ==========================================================================

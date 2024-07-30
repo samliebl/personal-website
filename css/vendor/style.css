@@ -243,6 +243,19 @@ h4+h5 {
     margin: 0 0 1rem 0;
 }
 
+.stanza.prose {
+    margin: 0 0 0 0;
+    text-indent: 3rem;
+}
+
+.stanza.prose:first-of-type {
+    text-indent: 0;
+}
+
+.stanza.prose:last-of-type {
+    margin: 0 0 1rem 0;
+}
+
 .poem {
     margin: 0 0 1rem 0;
 }

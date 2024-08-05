@@ -421,6 +421,10 @@ span.inter {
     line-height: 0;
 }
 
+.stanza blockquote {
+    border: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -445,7 +449,6 @@ span.inter {
  */
 
 .visually-hidden {
-
     *,
     *::before,
     *::after {
@@ -463,6 +466,8 @@ blockquote {
     border: 1px solid var(--whitesmoke);
     page-break-inside: avoid;
 }
+
+
 
 
 h3 {

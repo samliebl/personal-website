@@ -178,6 +178,43 @@ nav ul li {
     margin: 0 1rem 0 0;
 }
 
+.untitleds {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.untitleds li {
+    margin: 0 1rem 0 0;
+}
+
+.navlist {
+    columns: 2;
+    /* Number of columns */
+    column-gap: 2rem;
+    /* Gap between columns */
+    list-style: none;
+    /* Optional: remove bullet points */
+    padding: 0;
+    /* Optional: remove padding */
+    margin: 0;
+}
+
+.navlist li {
+    break-inside: avoid;
+    /* Prevent breaking of individual list items across columns */
+    padding: 0.5rem 0;
+    /* Optional: space between items */
+    line-height: inherit;
+    width: 15rem;
+    min-height: 1.5rem;
+
+}
+
 .inline {
     display: inline;
 }
@@ -449,6 +486,7 @@ span.inter {
  */
 
 .visually-hidden {
+
     *,
     *::before,
     *::after {

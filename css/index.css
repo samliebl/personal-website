@@ -1,2 +1,6 @@
-@import url("vendor/normalize.css");
-@import url("vendor/style.css");
+/* Import normalize.css & HTML5 Boilerplate */
+@import url(vendor/normalize.css);
+@import url(vendor/style.css);
+
+/* Author, user custom styles */
+@import url(user.css)

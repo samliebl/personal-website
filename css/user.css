@@ -1,0 +1,445 @@
+html,
+body {
+
+    /* For WebKit (Chrome, Safari) */
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* For Firefox */
+    font-smoothing: antialiased;
+    /* For Edge */
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+
+/* Colors as variables */
+:root {
+    /* HTML5 Boilerplate */
+    --selection: hsla(213, 92%, 85%, 1);
+    /* Bootstrap */
+    --text: hsla(210, 10%, 23%, 1);
+    /* colors.css v0.2.0 */
+    --navy: hsla(216, 100%, 16%, 1);
+    --blue: hsla(225, 100%, 42%, 1);
+    --aqua: hsla(187, 100%, 49%, 1);
+    --teal: hsla(180, 100%, 40%, 1);
+    --olive: hsla(147, 100%, 34%, 1);
+    --green: hsla(114, 100%, 38%, 1);
+    --lime: hsla(68, 100%, 44%, 1);
+    --yellow: hsla(48, 100%, 50%, 1);
+    --orange: hsla(24, 100%, 50%, 1);
+    --red: hsla(355, 100%, 46%, 1);
+    --maroon: hsla(358, 100%, 14%, 1);
+    --fuchsia: hsla(319, 100%, 50%, 1);
+    --purple: hsla(262, 100%, 50%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --silver: hsla(0, 0%, 47%, 1);
+    --gray: hsla(0, 0%, 20%, 1);
+    --black: hsla(0, 0%, 0%, 1);
+    --moon-gray: hsla(0, 0%, 80%, 1);
+    /* My colors */
+    --whitesmoke: hsla(0, 0%, 96%, 1);
+    /* My styles */
+    --measure-width: 36rem;
+    --width: calc(var(--measure-width)/16);
+    --width-1-2: calc(var(--width)/2);
+    --width-1-4: calc(var(--width)/4);
+    --width-1-5: calc(var(--width)/5);
+    /* Thanks to Inter by https://rsms.me/ */
+    --sans-serif: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --inter: Inter, sans-serif;
+    --inter-font-feature-settings: 'liga'1, 'calt'1;
+    /* fix for Chrome */
+}
+
+.text { color: hsla(210, 10%, 23%, 1);}
+.navy { color: hsla(216, 100%, 16%, 1);}
+.blue { color: hsla(225, 100%, 42%, 1);}
+.aqua { color: hsla(187, 100%, 49%, 1);}
+.teal { color: hsla(180, 100%, 40%, 1);}
+.olive { color: hsla(147, 100%, 34%, 1);}
+.green { color: hsla(114, 100%, 38%, 1);}
+.lime { color: hsla(68, 100%, 44%, 1);}
+.yellow { color: hsla(48, 100%, 50%, 1);}
+.orange { color: hsla(24, 100%, 50%, 1);}
+.red { color: hsla(355, 100%, 46%, 1);}
+.maroon { color: hsla(358, 100%, 14%, 1);}
+.fuchsia { color: hsla(319, 100%, 50%, 1);}
+.purple { color: hsla(262, 100%, 50%, 1);}
+.white { color: hsla(0, 0%, 100%, 1);}
+.silver { color: hsla(0, 0%, 47%, 1);}
+.gray { color: hsla(0, 0%, 20%, 1);}
+.black { color: hsla(0, 0%, 0%, 1);}
+.moon-gray { color: hsla(0, 0%, 80%, 1);}
+.whitesmoke { color: hsla(0, 0%, 96%, 1);}
+
+.bg-text { background-color: hsla(210, 10%, 23%, 1);}
+.bg-navy { background-color: hsla(216, 100%, 16%, 1);}
+.bg-blue { background-color: hsla(225, 100%, 42%, 1);}
+.bg-aqua { background-color: hsla(187, 100%, 49%, 1);}
+.bg-teal { background-color: hsla(180, 100%, 40%, 1);}
+.bg-olive { background-color: hsla(147, 100%, 34%, 1);}
+.bg-green { background-color: hsla(114, 100%, 38%, 1);}
+.bg-lime { background-color: hsla(68, 100%, 44%, 1);}
+.bg-yellow { background-color: hsla(48, 100%, 50%, 1);}
+.bg-orange { background-color: hsla(24, 100%, 50%, 1);}
+.bg-red { background-color: hsla(355, 100%, 46%, 1);}
+.bg-maroon { background-color: hsla(358, 100%, 14%, 1);}
+.bg-fuchsia { background-color: hsla(319, 100%, 50%, 1);}
+.bg-purple { background-color: hsla(262, 100%, 50%, 1);}
+.bg-white { background-color: hsla(0, 0%, 100%, 1);}
+.bg-silver { background-color: hsla(0, 0%, 47%, 1);}
+.bg-gray { background-color: hsla(0, 0%, 20%, 1);}
+.bg-black { background-color: hsla(0, 0%, 0%, 1);}
+.bg-moon-gray { background-color: hsla(0, 0%, 80%, 1);}
+.bg-whitesmoke { background-color: hsla(0, 0%, 96%, 1);}
+
+.nolist {
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+h5 {
+    color: var(--silver);
+    font-style: italic;
+    margin: 0 0 1rem 0;
+}
+
+.container {
+    padding: 1rem 2rem;
+}
+
+.img {
+    max-width: 16rem;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+nav ul li {
+    margin: 0 1rem 0 0;
+}
+
+.untitleds {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.untitleds li {
+    margin: 0 1rem 0 0;
+}
+
+.navlist {
+    columns: 2;
+    /* Number of columns */
+    column-gap: 2rem;
+    /* Gap between columns */
+    list-style: none;
+    /* Optional: remove bullet points */
+    padding: 0;
+    /* Optional: remove padding */
+    margin: 0;
+}
+
+.navlist li {
+    break-inside: avoid;
+    /* Prevent breaking of individual list items across columns */
+    padding: 0.5rem 0;
+    /* Optional: space between items */
+    line-height: inherit;
+    width: 15rem;
+    min-height: 1.5rem;
+
+}
+
+.inline {
+    display: inline;
+}
+
+.center {}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.spread {
+    justify-content: space-between;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0 0;
+    line-height: inherit;
+}
+
+h3,
+h4,
+h5 {
+    font-size: 1rem;
+}
+
+h3 {
+    margin: 1rem 0 0.5rem 0;
+}
+
+h4 {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.poem h5 {
+    color: var(--silver);
+    font-style: italic;
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+}
+
+h5 {
+    color: inherit;
+    font-style: inherit;
+    margin: inherit;
+}
+
+h4+h5 {
+    margin: 0 0 1rem 0;
+}
+
+.stanza {
+    margin: 0 0 1rem 0;
+}
+
+.stanza.prose {
+    margin: 0 0 0 0;
+    text-indent: 3rem;
+}
+
+.stanza.prose:first-of-type {
+    text-indent: 0;
+}
+
+.stanza.prose:last-of-type {
+    margin: 0 0 1rem 0;
+}
+
+.fragment-break+.stanza.prose {
+    text-indent: 0;
+    margin: 0 0 1rem 0;
+}
+
+.poem {
+    margin: 0 0 1rem 0;
+}
+
+.tab-space {
+    display: inline-block;
+    line-height: 0;
+    width: 0;
+}
+
+.measure {
+    max-width: var(--measure-width);
+}
+
+.w0 {
+    width: 0;
+}
+
+.w1 {
+    width: 2em;
+}
+
+.w2 {
+    width: 4em;
+}
+
+.w3 {
+    width: 6em;
+}
+
+.w4 {
+    width: 8em;
+}
+
+h4+h5 {
+    width: 16em;
+}
+
+a {
+    color: var(--blue);
+}
+
+a:visited {
+    color: var(--navy);
+
+}
+
+a:hover {
+    filter: brightness(2.2);
+
+}
+
+a:active {
+    color: var(--aqua);
+
+}
+
+cite {
+    font-style: normal;
+
+}
+
+.in-item-note {
+    line-height: 1.15;
+    padding: 0 0 0 2rem;
+}
+
+.in-item-note::before {
+    content: "\002A";
+}
+
+.fragment-break {
+    width: calc(var(--measure-width)/5);
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.fragment-break::before {
+    content: "\2042";
+}
+
+.section-break {
+    width: calc(var(--measure-width)/5);
+    text-align: center;
+}
+
+.section-break::before {
+    content: "\002A\2003\002A\2003\002A";
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list ul {
+    list-style-type: disc;
+    padding: 0 0 0 2rem;
+}
+
+.skills-list ul ul {
+    list-style-type: circle;
+}
+
+.skills-list ul ul ul {
+    list-style-type: square;
+}
+
+.mt1 {
+    margin-top: 1rem;
+}
+
+.mb1 {
+    margin-bottom: 1rem;
+}
+
+aside.notes {
+    font-size: 0.8rem;
+    border: var(--moon-gray) 0.0625rem solid;
+    max-width: 30rem;
+}
+
+aside.notes+.top {
+    margin: 1rem 0 0 0;
+}
+
+.sc {
+    font-variant: small-caps;
+}
+
+.level {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.level * {
+    margin: 0 1rem 0 0;
+}
+
+.sans-serif {
+    font-family: var(--sans-serif);
+}
+
+.inter {
+    font-family: var(--inter);
+    font-feature-settings: var(--inter-font-feature-settings);
+}
+
+@supports (font-variation-settings: normal) {
+    .inter {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+span.inter {
+    font-size: 0.9rem;
+    line-height: 0;
+}
+
+.stanza blockquote {
+    border: none;
+}
+
+.fleuron {
+    font-size: 2rem;
+    color: var(--moon-gray);
+}
+
+.emdash {
+    display: inline-block;
+    width: var(--width-1-2);
+    background: var(--text);
+    height: 1px;
+    line-height: 0;
+    vertical-align: 4px;
+}
+
+sup, sub {
+    font-family: var(--inter);
+    font-size: var(--width-1-4);
+    font-weight: 300;
+    line-height: inherit;
+    vertical-align: 3px;
+}

@@ -34,6 +34,11 @@ body {
     --white: hsla(0, 0%, 100%, 1);
     --silver: hsla(0, 0%, 47%, 1);
     --gray: hsla(0, 0%, 20%, 1);
+    --gray-900: hsla(190, 16%, 93%, 1);
+    --gray-700: hsla(205, 8%, 71%, 1);
+    --gray-500: hsla(180, 6%, 45%, 1);
+    --gray-300: hsla(183, 8%, 55%, 1);
+    --gray-100: hsla(0, 0%, 13%, 1);
     --black: hsla(0, 0%, 0%, 1);
     --moon-gray: hsla(0, 0%, 80%, 1);
     /* My colors */
@@ -442,4 +447,11 @@ sup, sub {
     font-weight: 300;
     line-height: inherit;
     vertical-align: 3px;
+}
+
+.disabled-link {
+    pointer-events: none; /* Prevents clicking on the link */
+    color: var(--gray-500); /* Changes the color to indicate it's disabled */
+    text-decoration: none; /* Removes underline */
+    cursor: default;       /* Changes the cursor to the default arrow */
 }

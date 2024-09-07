@@ -1,6 +1,5 @@
 html,
 body {
-
     /* For WebKit (Chrome, Safari) */
     -webkit-font-smoothing: subpixel-antialiased;
     /* For Firefox */
@@ -8,7 +7,6 @@ body {
     /* For Edge */
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-
 }
 
 /* Colors as variables */
@@ -45,6 +43,7 @@ body {
     --whitesmoke: hsla(0, 0%, 96%, 1);
     /* My styles */
     --measure-width: 36rem;
+    --measure-width-midprose: calc(var(--measure-width)*0.7);
     --width: calc(var(--measure-width)/16);
     --width-1-2: calc(var(--width)/2);
     --width-1-4: calc(var(--width)/4);
@@ -56,47 +55,165 @@ body {
     /* fix for Chrome */
 }
 
-.text { color: hsla(210, 10%, 23%, 1);}
-.navy { color: hsla(216, 100%, 16%, 1);}
-.blue { color: hsla(225, 100%, 42%, 1);}
-.aqua { color: hsla(187, 100%, 49%, 1);}
-.teal { color: hsla(180, 100%, 40%, 1);}
-.olive { color: hsla(147, 100%, 34%, 1);}
-.green { color: hsla(114, 100%, 38%, 1);}
-.lime { color: hsla(68, 100%, 44%, 1);}
-.yellow { color: hsla(48, 100%, 50%, 1);}
-.orange { color: hsla(24, 100%, 50%, 1);}
-.red { color: hsla(355, 100%, 46%, 1);}
-.maroon { color: hsla(358, 100%, 14%, 1);}
-.fuchsia { color: hsla(319, 100%, 50%, 1);}
-.purple { color: hsla(262, 100%, 50%, 1);}
-.white { color: hsla(0, 0%, 100%, 1);}
-.silver { color: hsla(0, 0%, 47%, 1);}
-.gray { color: hsla(0, 0%, 20%, 1);}
-.black { color: hsla(0, 0%, 0%, 1);}
-.moon-gray { color: hsla(0, 0%, 80%, 1);}
-.whitesmoke { color: hsla(0, 0%, 96%, 1);}
+.text {
+    color: hsla(210, 10%, 23%, 1);
+}
 
-.bg-text { background-color: hsla(210, 10%, 23%, 1);}
-.bg-navy { background-color: hsla(216, 100%, 16%, 1);}
-.bg-blue { background-color: hsla(225, 100%, 42%, 1);}
-.bg-aqua { background-color: hsla(187, 100%, 49%, 1);}
-.bg-teal { background-color: hsla(180, 100%, 40%, 1);}
-.bg-olive { background-color: hsla(147, 100%, 34%, 1);}
-.bg-green { background-color: hsla(114, 100%, 38%, 1);}
-.bg-lime { background-color: hsla(68, 100%, 44%, 1);}
-.bg-yellow { background-color: hsla(48, 100%, 50%, 1);}
-.bg-orange { background-color: hsla(24, 100%, 50%, 1);}
-.bg-red { background-color: hsla(355, 100%, 46%, 1);}
-.bg-maroon { background-color: hsla(358, 100%, 14%, 1);}
-.bg-fuchsia { background-color: hsla(319, 100%, 50%, 1);}
-.bg-purple { background-color: hsla(262, 100%, 50%, 1);}
-.bg-white { background-color: hsla(0, 0%, 100%, 1);}
-.bg-silver { background-color: hsla(0, 0%, 47%, 1);}
-.bg-gray { background-color: hsla(0, 0%, 20%, 1);}
-.bg-black { background-color: hsla(0, 0%, 0%, 1);}
-.bg-moon-gray { background-color: hsla(0, 0%, 80%, 1);}
-.bg-whitesmoke { background-color: hsla(0, 0%, 96%, 1);}
+.navy {
+    color: hsla(216, 100%, 16%, 1);
+}
+
+.blue {
+    color: hsla(225, 100%, 42%, 1);
+}
+
+.aqua {
+    color: hsla(187, 100%, 49%, 1);
+}
+
+.teal {
+    color: hsla(180, 100%, 40%, 1);
+}
+
+.olive {
+    color: hsla(147, 100%, 34%, 1);
+}
+
+.green {
+    color: hsla(114, 100%, 38%, 1);
+}
+
+.lime {
+    color: hsla(68, 100%, 44%, 1);
+}
+
+.yellow {
+    color: hsla(48, 100%, 50%, 1);
+}
+
+.orange {
+    color: hsla(24, 100%, 50%, 1);
+}
+
+.red {
+    color: hsla(355, 100%, 46%, 1);
+}
+
+.maroon {
+    color: hsla(358, 100%, 14%, 1);
+}
+
+.fuchsia {
+    color: hsla(319, 100%, 50%, 1);
+}
+
+.purple {
+    color: hsla(262, 100%, 50%, 1);
+}
+
+.white {
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.silver {
+    color: hsla(0, 0%, 47%, 1);
+}
+
+.gray {
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.black {
+    color: hsla(0, 0%, 0%, 1);
+}
+
+.moon-gray {
+    color: hsla(0, 0%, 80%, 1);
+}
+
+.whitesmoke {
+    color: hsla(0, 0%, 96%, 1);
+}
+
+.bg-text {
+    background-color: hsla(210, 10%, 23%, 1);
+}
+
+.bg-navy {
+    background-color: hsla(216, 100%, 16%, 1);
+}
+
+.bg-blue {
+    background-color: hsla(225, 100%, 42%, 1);
+}
+
+.bg-aqua {
+    background-color: hsla(187, 100%, 49%, 1);
+}
+
+.bg-teal {
+    background-color: hsla(180, 100%, 40%, 1);
+}
+
+.bg-olive {
+    background-color: hsla(147, 100%, 34%, 1);
+}
+
+.bg-green {
+    background-color: hsla(114, 100%, 38%, 1);
+}
+
+.bg-lime {
+    background-color: hsla(68, 100%, 44%, 1);
+}
+
+.bg-yellow {
+    background-color: hsla(48, 100%, 50%, 1);
+}
+
+.bg-orange {
+    background-color: hsla(24, 100%, 50%, 1);
+}
+
+.bg-red {
+    background-color: hsla(355, 100%, 46%, 1);
+}
+
+.bg-maroon {
+    background-color: hsla(358, 100%, 14%, 1);
+}
+
+.bg-fuchsia {
+    background-color: hsla(319, 100%, 50%, 1);
+}
+
+.bg-purple {
+    background-color: hsla(262, 100%, 50%, 1);
+}
+
+.bg-white {
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.bg-silver {
+    background-color: hsla(0, 0%, 47%, 1);
+}
+
+.bg-gray {
+    background-color: hsla(0, 0%, 20%, 1);
+}
+
+.bg-black {
+    background-color: hsla(0, 0%, 0%, 1);
+}
+
+.bg-moon-gray {
+    background-color: hsla(0, 0%, 80%, 1);
+}
+
+.bg-whitesmoke {
+    background-color: hsla(0, 0%, 96%, 1);
+}
 
 .nolist {
     list-style: none;
@@ -255,13 +372,18 @@ h4+h5 {
 }
 
 .stanza.prose:last-of-type {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0 0;
+}
+
+.stanza.prose+h5 {
+    margin: 1rem 0 1rem 0;
 }
 
 .fragment-break+.stanza.prose {
     text-indent: 0;
     margin: 0 0 1rem 0;
 }
+
 
 .poem {
     margin: 0 0 1rem 0;
@@ -337,7 +459,7 @@ cite {
 .fragment-break {
     width: calc(var(--measure-width)/5);
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0 0;
 }
 
 .fragment-break::before {
@@ -427,6 +549,11 @@ span.inter {
     border: none;
 }
 
+blockquote {
+    padding: 0;
+    margin: 1rem 0 1rem 3rem;
+}
+
 .fleuron {
     font-size: 2rem;
     color: var(--moon-gray);
@@ -441,7 +568,8 @@ span.inter {
     vertical-align: 4px;
 }
 
-sup, sub {
+sup,
+sub {
     font-family: var(--inter);
     font-size: var(--width-1-4);
     font-weight: 300;
@@ -450,8 +578,16 @@ sup, sub {
 }
 
 .disabled-link {
-    pointer-events: none; /* Prevents clicking on the link */
-    color: var(--gray-500); /* Changes the color to indicate it's disabled */
-    text-decoration: none; /* Removes underline */
-    cursor: default;       /* Changes the cursor to the default arrow */
+    pointer-events: none;
+    /* Prevents clicking on the link */
+    color: var(--gray-500);
+    /* Changes the color to indicate it's disabled */
+    text-decoration: none;
+    /* Removes underline */
+    cursor: default;
+    /* Changes the cursor to the default arrow */
+}
+
+.midprose {
+    max-width: var(--measure-width-midprose);
 }

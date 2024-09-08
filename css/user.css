@@ -556,7 +556,7 @@ blockquote {
 
 .fleuron {
     font-size: 2rem;
-    color: var(--moon-gray);
+    color: var(--gray-700);
 }
 
 .emdash {

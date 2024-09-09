@@ -135,6 +135,18 @@ body {
     color: hsla(0, 0%, 96%, 1);
 }
 
+.gray-900 {color: var(--gray-900);}
+.gray-700 {color: var(--gray-700);}
+.gray-500 {color: var(--gray-500);}
+.gray-300 {color: var(--gray-300);}
+.gray-100 {color: var(--gray-100);}
+
+.bg-gray-900 {color: var(--gray-900);}
+.bg-gray-700 {color: var(--gray-700);}
+.bg-gray-500 {color: var(--gray-500);}
+.bg-gray-300 {color: var(--gray-300);}
+.bg-gray-100 {color: var(--gray-100);}
+
 .bg-text {
     background-color: hsla(210, 10%, 23%, 1);
 }
@@ -590,4 +602,16 @@ sub {
 
 .midprose {
     max-width: var(--measure-width-midprose);
+}
+
+time {
+    display: block;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
 }

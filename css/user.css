@@ -644,3 +644,7 @@ p:nth-of-type(3)+.stanza.inter {
 p:nth-of-type(3)+.stanza.inter+p {
     margin:1rem 0;
 }
+
+.greek {
+    color: var(--maroon);
+}

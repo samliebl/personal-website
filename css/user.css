@@ -685,3 +685,41 @@ p:nth-of-type(3)+.stanza.inter+p {
     font-weight: 400;
     font-size: inherit;
 }
+
+.alternate-version {
+    margin: 1rem 0;
+}
+
+.alt {
+    font-style: italic;
+    font-family: baskerville;
+    padding: 1rem;
+    font-weight: 400;
+    color: var(--gray-300);
+    display: inline-block;
+}
+
+.alt::before {
+    content: "~\2003";
+}
+.alt::after {
+    content: "\2003~";
+}
+
+.asterisk {
+    text-align: left;
+    display: inline-block;
+}
+
+aside.notes ul {
+    list-style: none;
+    list-style-position: outside;
+    padding: 0 0 0 1rem;
+}
+
+aside.notes ul li {
+}
+
+aside.notes ul li::before {
+    content: "* ";
+}

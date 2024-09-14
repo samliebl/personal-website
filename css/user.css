@@ -412,7 +412,7 @@ h4+h5 {
 }
 
 .stanza.prose:last-of-type {
-    margin: 0 0 0 0;
+    margin: 0 0 1rem 0;
 }
 
 .stanza.prose+h5 {
@@ -499,7 +499,7 @@ cite {
 .fragment-break {
     width: calc(var(--measure-width)/5);
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 0 0 1rem 0;
 }
 
 .fragment-break::before {

@@ -53,6 +53,8 @@ body {
     --inter: Inter, sans-serif;
     --inter-font-feature-settings: 'liga'1, 'calt'1;
     /* fix for Chrome */
+    --font-size: 1rem;
+    --font-size-monospace: calc(var(--font-size)*0.85);
 }
 
 .text {
@@ -687,16 +689,16 @@ p:nth-of-type(3)+.stanza.inter+p {
 }
 
 .alternate-version {
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .alt {
     font-style: italic;
     font-family: baskerville;
-    padding: 1rem;
     font-weight: 400;
     color: var(--gray-300);
     display: inline-block;
+    padding: 0 0 1rem 0;
 }
 
 .alt::before {
@@ -722,4 +724,10 @@ aside.notes ul li {
 
 aside.notes ul li::before {
     content: "* ";
+}
+
+code {
+    font-size: var(--font-size-monospace);
+    font-family: Roboto mono;
+    color: var(--maroon);
 }

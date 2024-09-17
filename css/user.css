@@ -316,10 +316,11 @@ nav ul li {
     margin: 0 1rem 0 0;
 }
 
-.navlist {
+.navlist,
+.navlist.stanger li ul {
     columns: 2;
     /* Number of columns */
-    column-gap: 2rem;
+    column-gap: 1rem;
     /* Gap between columns */
     list-style: none;
     /* Optional: remove bullet points */
@@ -328,15 +329,8 @@ nav ul li {
     margin: 0;
 }
 
-.navlist li {
-    break-inside: avoid;
-    /* Prevent breaking of individual list items across columns */
-    padding: 0.5rem 0;
-    /* Optional: space between items */
-    line-height: inherit;
-    width: 15rem;
-    min-height: 1.5rem;
-
+.navlist.stranger li {
+    padding: 1rem 1rem 0 0;
 }
 
 .inline {

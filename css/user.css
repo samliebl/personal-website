@@ -484,12 +484,22 @@ cite {
 }
 
 .in-item-note {
-    line-height: 1.15;
-    padding: 0 0 0 2rem;
+    line-height: 1.15em;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: block;
+    position: relative;
+    width: 24em;
+    background-color: hsla(61, 100%, 88%, 1);
+    font-size: 0.8em;
+    font-family: var(--inter);
+    /* Adjust as needed */
 }
 
 .in-item-note::before {
     content: "\002A";
+    position: absolute;
+    left: 0.25rem;
+    top: 0.7rem;
 }
 
 .fragment-break {
@@ -698,6 +708,7 @@ p:nth-of-type(3)+.stanza.inter+p {
 .alt::before {
     content: "~\2003";
 }
+
 .alt::after {
     content: "\2003~";
 }
@@ -713,8 +724,7 @@ aside.notes ul {
     padding: 0 0 0 1rem;
 }
 
-aside.notes ul li {
-}
+aside.notes ul li {}
 
 aside.notes ul li::before {
     content: "* ";

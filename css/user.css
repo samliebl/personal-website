@@ -735,3 +735,32 @@ code {
     font-family: Roboto mono;
     color: var(--maroon);
 }
+
+.stanza.lvl0 {
+margin-left: 0rem;
+margin-bottom: 0;
+}
+.stanza.lvl1 {
+margin-left: 3.33333333rem;
+margin-bottom: 0;
+}
+.stanza.lvl2 {
+margin-left: 6.66666667rem;
+margin-bottom: 0;
+}
+.stanza.lvl3 {
+margin-left: 10rem;
+margin-bottom: 0;
+}
+.stanza.lvl4 {
+margin-bottom: 0;
+margin-left: 13.3333333333rem;
+}
+.stanza.lvl5 {
+margin-bottom: 0;
+margin-left: 16.6666666667rem;
+}
+.stanza.lvl6 {
+margin-left: 20rem;
+margin-bottom: 0;
+}

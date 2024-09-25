@@ -1,20 +1,11 @@
-html,
-body {
-    /* For WebKit (Chrome, Safari) */
-    -webkit-font-smoothing: subpixel-antialiased;
-    /* For Firefox */
-    font-smoothing: antialiased;
-    /* For Edge */
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
+
 
 /* Colors as variables */
 :root {
     /* HTML5 Boilerplate */
     --selection: hsla(213, 92%, 85%, 1);
     /* Bootstrap */
-    --text: hsla(210, 10%, 23%, 1);
+    --text: hsla(210, 2%, 11%, 1);
     /* colors.css v0.2.0 */
     --navy: hsla(216, 100%, 16%, 1);
     --blue: hsla(225, 100%, 42%, 1);
@@ -55,6 +46,18 @@ body {
     /* fix for Chrome */
     --font-size: 1rem;
     --font-size-monospace: calc(var(--font-size)*0.85);
+}
+
+html,
+body {
+    /* For WebKit (Chrome, Safari) */
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* For Firefox */
+    font-smoothing: antialiased;
+    /* For Edge */
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: var(--text);
 }
 
 .text {
@@ -380,18 +383,23 @@ h4 {
 .poem h5 {
     color: var(--silver);
     font-style: italic;
-    margin: 0 0 1rem 0;
-    font-size: 0.9rem;
-}
-
-h5 {
-    color: inherit;
-    font-style: inherit;
-    margin: inherit;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.05rem;
 }
 
 h4+h5 {
     margin: 0 0 1rem 0;
+}
+
+h5 {
+    color: var(--gray-500);
+    font-style: italic;
+    margin: inherit;
+    font-size: 1.05rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
 
 .stanza {
@@ -621,6 +629,7 @@ sub {
     font-weight: 300;
     line-height: inherit;
     vertical-align: 3px;
+    margin: 0 0 0 1px;
 }
 
 .disabled-link {
@@ -647,6 +656,11 @@ time {
 }
 
 .tabular-nums {
+    font-variant-numeric: tabular-nums;
+}
+
+.bucket-list-item .number {
+    font-family: Inter;
     font-variant-numeric: tabular-nums;
 }
 
@@ -736,3 +750,66 @@ code {
     color: var(--maroon);
 }
 
+
+var {
+    display: block;
+    font-style: normal;
+    font-family: Iosevka-Custom-Extended, Roboto mono, monospace;
+    color: var(--fuchsia);
+}
+
+.roboto,
+.stanza .roboto {
+    font-style: normal;
+    font-family: Roboto mono;
+    color: var(--gray-500);
+    line-height: 0;
+}
+
+.allusion p {
+    margin: 0;
+}
+
+.fantasy-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* First column takes up all available space, second column auto-sizes */
+    width: 100%;
+    /* Ensure the container takes the full width */
+    grid-row-gap: 0.5rem;
+    margin: 0 0 1rem 0;
+}
+
+.fantasy-header .allusion {
+    grid-column: 2;
+    width: 24rem
+    /* Place the item in the second column */
+}
+
+.allusion cite {
+    font-style: normal;
+    font-family: Inter, sans-serif;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0.25rem 0 0 2rem;
+    display: block;
+    font-variant-numeric: tabular-nums;
+    color: var(--gray-500);
+}
+
+.topbar {
+    border-bottom: 1px var(--gray-700) solid;
+}
+
+.bucket-list {
+    list-style: none;
+    padding: 0;
+}
+
+.bucket-list li p {
+    margin: 0;
+}
+
+.indent {
+    margin: 0 0 0 2rem;
+}

@@ -46,6 +46,7 @@
     /* fix for Chrome */
     --font-size: 1rem;
     --font-size-monospace: calc(var(--font-size)*0.85);
+    --roboto-mono: 'Roboto Mono', monospace;
 }
 
 html,
@@ -586,6 +587,31 @@ aside.notes+.top {
 .inter {
     font-family: var(--inter);
     font-feature-settings: var(--inter-font-feature-settings);
+}
+
+.roboto-mono {
+    font-family: var(--roboto-mono);
+}
+
+.type-specimen {
+    margin:0;
+    border: 1px solid var(--gray-700);
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    border-radius: 0.125rem;
+}
+
+.type-specimen figcaption {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+.typeface {
+    display: block;
+    margin: 1rem 0;
+    padding: 0;
 }
 
 @supports (font-variation-settings: normal) {

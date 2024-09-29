@@ -1,5 +1,3 @@
-
-
 /* Colors as variables */
 :root {
     /* HTML5 Boilerplate */
@@ -593,26 +591,6 @@ aside.notes+.top {
     font-family: var(--roboto-mono);
 }
 
-.type-specimen {
-    margin:0;
-    border: 1px solid var(--gray-700);
-    padding: 1rem;
-    margin: 1rem 0 0 0;
-    border-radius: 0.125rem;
-}
-
-.type-specimen figcaption {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 0.75rem;
-}
-
-.typeface {
-    display: block;
-    margin: 1rem 0;
-    padding: 0;
-}
 
 @supports (font-variation-settings: normal) {
     .inter {
@@ -809,7 +787,7 @@ var {
 .fantasy-header .allusion {
     grid-column: 2;
     width: 24rem
-    /* Place the item in the second column */
+        /* Place the item in the second column */
 }
 
 .allusion cite {
@@ -841,11 +819,11 @@ var {
 }
 
 .trapdoor {
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
     width: 1rem;
     height: 1rem;
     position: absolute;
-    right:0;
+    right: 0;
     background-color: var(--gray-900);
 }
 
@@ -861,13 +839,34 @@ var {
     margin: 0;
 }
 
-.specimen-body {
+.specimen {
     padding: 2rem 0;
     margin: 0;
 }
 
-.specimen-body p {
+.specimen p {
     margin: 0;
+}
+
+.specimen {
+    margin: 0;
+    border: 1px solid var(--gray-700);
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    border-radius: 0.125rem;
+}
+
+.specimen figcaption {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+.typeface {
+    display: block;
+    margin: 1rem 0;
+    padding: 0;
 }
 
 .glossary {
@@ -886,4 +885,46 @@ var {
 em {
     font-size: 103%;
     line-height: 0;
+}
+
+.specimen-content {
+    padding: 2rem 0;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0.5rem;
+}
+
+@media (max-width: 568px) {
+    .color-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 339px) {
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.color .swatch {
+    height: 2rem;
+    width: 4rem;
+}
+
+.color {
+    line-height: 0;
+}
+
+.color .swatch,
+.color .swatch-caption {
+    display: inline-block;
+}
+
+.color .swatch-caption {
+    font-family: var(--sans-serif);
+    font-size: 0.7rem;
+    vertical-align: 11px;
 }

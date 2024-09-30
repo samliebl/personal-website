@@ -951,7 +951,7 @@ em {
 
 .asterism::before {
     font-family: var(--sans-serif);
-    content: "🞻🞻🞻";
+    content: "* * *";
     color: var(--gray-500);
 }
 

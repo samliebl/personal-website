@@ -828,7 +828,7 @@ var {
     height: 1rem;
     position: absolute;
     right: 0;
-/*    background-color: var(--gray-900);*/
+    /*    background-color: var(--gray-900);*/
 }
 
 .list {
@@ -974,5 +974,33 @@ em {
     max-width: 20em;
 }
 
-.party-a {text-align: left}
-.party-b {text-align: right}
+.party-a {
+    text-align: left
+}
+
+.party-b {
+    text-align: right
+}
+
+.old-school {
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+a.old-school::before {
+    content: "[";
+    color: var(--text);
+    font-family: Inter;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 0;
+}
+
+a.old-school::after {
+    content: "]";
+    color: var(--text);
+    font-family: Inter;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 0;
+}

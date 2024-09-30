@@ -335,6 +335,10 @@ nav ul li {
     padding: 1rem 1rem 0 0;
 }
 
+.navlist li {
+    padding: 1rem 1rem 0 0;
+}
+
 .inline {
     display: inline;
 }
@@ -824,7 +828,7 @@ var {
     height: 1rem;
     position: absolute;
     right: 0;
-    background-color: var(--gray-900);
+/*    background-color: var(--gray-900);*/
 }
 
 .list {
@@ -928,3 +932,47 @@ em {
     font-size: 0.7rem;
     vertical-align: 11px;
 }
+
+.asterism {
+    display: block;
+    line-height: 1;
+    height: 2rem;
+}
+
+.asterism::before {
+    font-family: var(--sans-serif);
+    content: "🞻🞻🞻";
+    color: var(--gray-500);
+}
+
+.sneaky-link {
+    text-decoration: none;
+    color: var(--gray-700);
+}
+
+.spacer {
+    display: inline-block;
+    line-height: inherit;
+    width: 2rem;
+}
+
+.minigrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+}
+
+.mg-1 {
+    font-size: 2rem;
+}
+
+.line {
+    display: block;
+}
+
+.dialog {
+    max-width: 20em;
+}
+
+.party-a {text-align: left}
+.party-b {text-align: right}

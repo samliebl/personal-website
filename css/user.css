@@ -901,6 +901,16 @@ em {
     grid-row-gap: 0.5rem;
 }
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.portfolio-grid div {
+    padding:4rem;
+    max-width: 12rem;
+}
+
 @media (max-width: 568px) {
     .color-grid {
         grid-template-columns: 1fr 1fr;
@@ -1003,4 +1013,15 @@ a.old-school::after {
     text-decoration: none;
     font-weight: 300;
     line-height: 0;
+}
+
+.categories li {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border: 1px solid var(--gray-700);
+}
+
+.no-underline,
+a .no-underline {
+    text-decoration: none;
 }

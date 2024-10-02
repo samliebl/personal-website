@@ -907,8 +907,8 @@ em {
 }
 
 .portfolio-grid div {
-    padding: 4rem;
-    max-width: 12rem;
+    padding: 1rem;
+    max-width: 20vw;
 }
 
 .columns {
@@ -923,17 +923,19 @@ em {
     }
 
     .portfolio-grid div {
-        padding: 2rem;
+        padding: 1rem;
     }
 }
 
 @media (max-width:750px) {
     .portfolio-grid {
         grid-template-columns: 1fr 1fr;
+        max-width: 100%;
     }
 
     .portfolio-grid div {
-        padding: 2rem;
+        padding: 1rem;
+        max-width: 100%;
     }
 
     .columns {
@@ -1061,4 +1063,8 @@ a.old-school::after {
 
 .no-underline {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }

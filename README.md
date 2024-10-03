@@ -23,23 +23,6 @@ This site contains content in the form of a) **writing**, b) **portfolio items**
 1. Portfolio items &rarr; `/work/work.html`
 1. Professional information &rarr;  `/work/skills.html`
 
-<pre style="
-	font-family:Inter, Arial, sans-serif;
-	background:white;
-	padding:0;
-	margin:0">
-Writing
-	Poems
-Portfolio items (graphic design)
-	Icons
-	Logos
-	Book covers (to-do)
-	Copywriting (?)
-	Drawing, illustration (?)
-Professional information
-	Skills and experience
-</pre>
-
 #### Poems
 
 I write poems and post them intermittently. These are the collections of them with to-do's to keep me organized.
@@ -53,26 +36,37 @@ I write poems and post them intermittently. These are the collections of them wi
 	Come to Asheville  
 	~~When I Love You is in the Mornings~~ ✓  
 	I liked me better when I was with you  
-	J.
+	J.  
+	Thoughts about K.  
+	Forth unto this world  
+	Taylor  
+	The book alive  
+	Another sappy one in loose itm  
+	Dear Ryann  
+	Going down a road you don't want to go down  
+	What are days but a string of hours?  
+	~~Untitled 0.2.1~~ ✓  
 1. **Someone** (2024)  
 	Wedding Vows  
 	Oh how unfortunate  
 	~~Back when I Was Happy~~ ✓  
 	Me Brand New  
-	On the Occasion of Your Birth  
+	On the Occasion of Your Birth 
 	The Words in Me  
 	I Know a Good Writer  
 	I Should Be Working  
 	Beloved, K.  
 	It Was Love, So We Ran Away  
-	My Death (1) and  
-	&emsp;Funeral (2)  
-	&emsp;Judgement (3)  
-	&emsp;Going to Hell (4)  
-	&emsp;Going to Heaven (5)  
-	Poems by  
-	&emsp;Women About Men (1)  
-	&emsp;Men About Women (2)
+	**My Death** (1) and  
+	\- Funeral (2)  
+	\- Judgement (3)  
+	\- Going to Hell (4)  
+	\- Going to Heaven (5)  
+	**Poems by**  
+	\- Women About Men (1)  
+	\- Men About Women (2)  
+	Wedding Vows  
+	Downtown Raleigh, \<date\>
 
 
 <h2 id="section_acknowledgments">Acknowledgments</h2>

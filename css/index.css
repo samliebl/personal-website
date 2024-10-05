@@ -5,6 +5,7 @@
 /* Import normalize.css & HTML5 Boilerplate */
 @import url(vendor/normalize.css);
 @import url(vendor/style.css);
+@import url(vendor/aspect-ratios.css);
 
 /* Author, user custom styles */
-@import url(user.css)
+@import url(user.css);

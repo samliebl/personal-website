@@ -1012,6 +1012,16 @@ em {
     grid-row-gap: 1rem;
 }
 
+.bookgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.super {
+    line-height: 0;
+    vertical-align: baseline;
+}
+
 .mg-1 {
     font-size: 2rem;
 }

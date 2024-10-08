@@ -670,6 +670,8 @@ time {
 .bucket-list-item .number {
     font-family: Inter;
     font-variant-numeric: tabular-nums;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
 }
 
 .stanza.inter+p:nth-of-type(3) {
@@ -810,8 +812,21 @@ var {
 }
 
 .bucket-list {
+    border:1px solid var(--gray-700);
     list-style: none;
     padding: 0;
+}
+
+.bucket-list-item {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+}
+
+.bucket-list-item ul {
+    border:1px solid var(--fuchsia);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    list-style: none;
 }
 
 .bucket-list li p {
@@ -1024,12 +1039,13 @@ em {
     max-width: 20em;
 }
 
-.party-a {
+.them {
     text-align: left
 }
 
-.party-b {
-    text-align: right
+.me {
+    text-align: right;
+    color: var(--red);
 }
 
 .old-school {
@@ -1067,4 +1083,20 @@ a.old-school::after {
 
 img {
     max-width: 100%;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.lh0 {
+    line-height: 0;
+}
+
+.lhi {
+    line-height: inherit;
+}
+
+.subitems {
+    width: 100%;
 }

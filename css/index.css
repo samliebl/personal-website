@@ -6,5 +6,7 @@
 @import url(vendor/normalize.css);
 @import url(vendor/style.css);
 
+@import url(vendor/tachyons.pieces.css);
+
 /* Author, user custom styles */
 @import url(user.css)

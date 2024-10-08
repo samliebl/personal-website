@@ -36,7 +36,7 @@ I write poems and post them intermittently. These are the collections of them wi
 	Come to Asheville  
 	~~When I Love You is in the Mornings~~ ✓  
 	I liked me better when I was with you  
-	J.  
+	J.&ensp;D.
 	Thoughts about K.  
 	Forth unto this world  
 	Taylor  
@@ -45,19 +45,22 @@ I write poems and post them intermittently. These are the collections of them wi
 	Dear Ryann  
 	Going down a road you don't want to go down  
 	What are days but a string of hours?  
+	The Words in Me  
 	~~Untitled 0.2.1~~ ✓  
 1. **Someone** (2024)  
-	Wedding Vows  
-	Oh how unfortunate  
-	~~Back when I Was Happy~~ ✓  
-	Me Brand New  
-	On the Occasion of Your Birth 
-	The Words in Me  
+	Beloved, K.  
+	Downtown Raleigh, \<date\>  
+	I Am an Open Book  
 	I Know a Good Writer  
 	I Should Be Working  
-	Beloved, K.  
 	It Was Love, So We Ran Away  
-	**My Death** (1) and  
+	Me Brand New  
+	On the Occasion of Your Birth  
+	Call Me Baby When We're Together
+	K.&ensp;B.
+	Wedding Vows  
+	~~Back when I Was Happy~~ ✓  
+	**My Death** (1) and…  
 	\- Funeral (2)  
 	\- Judgement (3)  
 	\- Going to Hell (4)  
@@ -65,8 +68,6 @@ I write poems and post them intermittently. These are the collections of them wi
 	**Poems by**  
 	\- Women About Men (1)  
 	\- Men About Women (2)  
-	Wedding Vows  
-	Downtown Raleigh, \<date\>
 
 
 <h2 id="section_acknowledgments">Acknowledgments</h2>

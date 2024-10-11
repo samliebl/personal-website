@@ -36,60 +36,55 @@ I write poems and post them intermittently. These are the collections of them wi
 	Come to Asheville  
 	~~When I Love You is in the Mornings~~ ✓  
 	I liked me better when I was with you  
-	J.&ensp;D.
-	Thoughts about K.  
-	Forth unto this world  
-	Taylor  
-	The book alive  
-	Another sappy one in loose itm  
-	Dear Ryann  
-	Going down a road you don't want to go down  
-	What are days but a string of hours?  
 	The Words in Me  
-	~~Untitled 0.2.1~~ ✓  
+	J.
 1. **Someone** (2024)  
-	Beloved, K.  
-	Downtown Raleigh, \<date\>  
-	I Am an Open Book  
-	I Know a Good Writer  
-	I Should Be Working  
-	It Was Love, So We Ran Away  
+	Wedding Vows  
+	Oh how unfortunate  
+	~~Back when I Was Happy~~ ✓  
 	Me Brand New  
 	On the Occasion of Your Birth  
-	Call Me Baby When We're Together
-	K.&ensp;B.
-	Wedding Vows  
-	~~Back when I Was Happy~~ ✓  
-	**My Death** (1) and…  
-	\- Funeral (2)  
-	\- Judgement (3)  
-	\- Going to Hell (4)  
-	\- Going to Heaven (5)  
-	**Poems by**  
-	\- Women About Men (1)  
-	\- Men About Women (2)  
+	I Know a Good Writer  
+	I Should Be Working  
+	Beloved, K.  
+	It Was Love, So We Ran Away  
+	My Death (1) and  
+	&emsp;Funeral (2)  
+	&emsp;Judgement (3)  
+	&emsp;Going to Hell (4)  
+	&emsp;Going to Heaven (5)  
+	Poems by  
+	&emsp;Women About Men (1)  
+	&emsp;Men About Women (2)
 
 
 <h2 id="section_acknowledgments">Acknowledgments</h2>
 
-HTML5 Boilerplate + their CSS template  
-[[Homepage](https://html5boilerplate.com)] [[GitHub](https://github.com/h5bp/html5-boilerplate)]  
+<details>
+	<summary>Acknowledgments</summary>
 
-Normalize.css and that body of work by Nicolas Gallagher, *et al*.  
-[[Homepage](https://necolas.github.io/normalize.css/)] [[GitHub](https://github.com/necolas/normalize.css)]  
-
-Adam Morse (Colors)  
-[[Homepage](https://clrs.cc)] [[GitHub](https://github.com/mrmrs/colors-saturated/)]  
-
-Stanley Morison (Times New Roman)  
+- HTML5 Boilerplate + their CSS template  
+[[Website](https://html5boilerplate.com)] [[GitHub](https://github.com/h5bp/html5-boilerplate)]  
+- Normalize.css and that body of work by Nicolas Gallagher, *et al*.  
+[[Website](https://necolas.github.io/normalize.css/)] [[GitHub](https://github.com/necolas/normalize.css)]  
+- Adam Morse (Colors)  
+[[Website](https://clrs.cc)] [[GitHub](https://github.com/mrmrs/colors-saturated/)]  
+- Stanley Morison (Times New Roman)  
 [[Britannica](https://www.britannica.com/biography/Stanley-Morison)] [[Monotype](https://www.monotype.com)]  
+- Rasmus Andersson (Inter)  
+[[Website](https://rsms.me/)] [[GitHub](https://github.com/rsms/inter)]  
+- Christian Robinson (Roboto)  
+[[Website](https://www.theartoffun.com)] [[Twitter/X](https://twitter.com/cr64)]  
+- Wikipedia  
+[[Wikimedia Foundation](https://www.wikimedia.org)] [[Wikipedia](https://www.wikipedia.org)]  
+- Tachyons  
+[[Website](http://tachyons.io)] [[Github](https://github.com/tachyons-css/tachyons/)]
+- Mozilla Foundation (in particular their web docs)  
+[[Website](https://www.mozilla.org/)] [[Web Docs](https://developer.mozilla.org/)]
 
-Rasmus Andersson (Inter)  
-[[Homepage](https://rsms.me/)] [[GitHub](https://github.com/rsms/inter)]  
+</details>
 
-Christian Robinson (Roboto)
-[[Homepage](https://www.theartoffun.com)] [[Twitter/X](https://twitter.com/cr64)] 
-Wikipedia
+
 
 ---
 

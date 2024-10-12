@@ -49,6 +49,7 @@ I write poems and post them intermittently. These are the collections of them wi
 	The Movements of the Planets  
 	The Words in Me  
 	~~When I Love You is in the Mornings~~ ✓  
+	~~Together, we were air~~ ✓  
 	You girls are like me  
 	Dearest,&ensp;J.&ensp;D.
 1. **Someone** (2024)  
@@ -63,6 +64,7 @@ I write poems and post them intermittently. These are the collections of them wi
 	Oh how unfortunate  
 	On the Occasion of Your Birth  
 	Wedding Vows  
+	Call Me ‘Baby’ When We’re Together  
 	**My Death** (1/5) and…  
 	&emsp;Funeral (2/5)  
 	&emsp;Judgement (3/5)  
@@ -136,8 +138,6 @@ Thanks for visiting.
 <h2 id="section_License">License</h2>
 
 Please consider everything *except for any and all content in `poems`, `work` directories*¹ available under the license (MIT) in project directory `./LICENSE.txt`.
-
----
 
 <!-- Notes -->
 

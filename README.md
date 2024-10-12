@@ -6,25 +6,33 @@ My website. [Located here](https://samliebl.com/).
 
 1. [Construction](#section_Construction)
 1. [Site Content](#section_SiteContent)
-	1. [Poems](#section_Poems)
+	1. [Poems (Writing)](#section_Poems)
 		1. [Poems to-do list](#section_PoemsToDoList)
+	1. [Portfolio items](#section_PortfolioItems)
+	1. [Professional information](#section_ProfessionalInformation)
 1. [Acknowledgments](#section_Acknowledgments)
 1. [License](#section_License)
 1. [Notes](#section_Notes)
 
 ---
 
+<!-- Construction -->
+
 <h2 id="section_Construction">Construction</h2>
 
 It&rsquo;s just basic HTML and CSS. There is some JavaScript in a footer so that the current year always displays.
 
+<!-- Site Content -->
+
 <h2 id="section_SiteContent">Site Content</h2>
 
-This site contains content in the form of a) **writing**, b) **portfolio items** and c) **professional information**.
+This site contains content in the forms of a) **writing**, b) **portfolio items** and c) **professional information**.
 
-1. Writing &rarr; `/poems/*`
-1. Portfolio items &rarr; `/work/work.html`
-1. Professional information &rarr;  `/work/skills.html`
+1. Writing &rarr; `poems/*`
+1. Portfolio items &rarr; `work/work.html`
+1. Professional information &rarr;  `work/skills.html`
+
+<!-- Poems (Writing) -->
 
 <h4 id="section_Poems">Poems</h4>
 
@@ -36,23 +44,25 @@ I write poems and post them intermittently. These are the collections of them wi
 1. **Stranger** (2015–2022)  
 	…*continuing to collect*…  
 	But I would capture something close  
-	You girls are like me  
-	The Movements of the Planets  
 	Come to Asheville  
-	~~When I Love You is in the Mornings~~ ✓  
 	I liked me better when I was with you  
+	The Movements of the Planets  
 	The Words in Me  
-	J.
+	~~When I Love You is in the Mornings~~ ✓  
+	You girls are like me  
+	Dearest,&ensp;J.&ensp;D.
 1. **Someone** (2024)  
-	Wedding Vows  
-	Oh how unfortunate  
 	~~Back when I Was Happy~~ ✓  
-	Me Brand New  
-	On the Occasion of Your Birth  
+	Beloved, K.&ensp;P.  
+	I am an Open Book  
 	I Know a Good Writer  
 	I Should Be Working  
-	Beloved, K.  
+	I Think It Was Today (K.&ensp;B.)  
 	It Was Love, So We Ran Away  
+	Me Brand New  
+	Oh how unfortunate  
+	On the Occasion of Your Birth  
+	Wedding Vows  
 	**My Death** (1/5) and…  
 	&emsp;Funeral (2/5)  
 	&emsp;Judgement (3/5)  
@@ -62,8 +72,36 @@ I write poems and post them intermittently. These are the collections of them wi
 	&emsp;Women About Men (1/2)  
 	&emsp;Men About Women (2/2)
 
+<!-- Portfolio items  -->
+
+<h2 id="section_PortfolioItems">Portfolio items</h2>
+
+Things I've made and designed. Logos, illustrations, mockups, etc.
+
+<!-- Poems (Writing) -->
+
+<h3 id="section_PoemsWriting">Poems (Writing)</h3>
+
+Things I've written
+
+Location(s): `poems/*`
+
+<!-- Professional information -->
+
+<h3 id="section_ProfessionalInformation">Professional information</h3>
+
+
+<h4 id="section_Experience">Experience</h3>
+
+Things I've done and what I've learned
+
+Location(s): `work/skills.html`, `work/work.html`
+
+<!-- Acknowledgments -->
 
 <h2 id="section_Acknowledgments">Acknowledgments</h2>
+
+Selected dependencies and inspiration
 
 <details>
 	<summary>Acknowledgments</summary>
@@ -89,18 +127,21 @@ I write poems and post them intermittently. These are the collections of them wi
 
 </details>
 
-
-
 ---
 
 Thanks for visiting.
 
+<!-- License -->
+
 <h2 id="section_License">License</h2>
 
-Please consider everything *except for any and all content in `poems` directory*¹ available under the license in project directory (MIT).
+Please consider everything *except for any and all content in `poems`, `work` directories*¹ available under the license (MIT) in project directory `./LICENSE.txt`.
 
 ---
 
+<!-- Notes -->
+
 <h4 id="section_Notes">Notes</h4>
 
-1. For content in `poems`: &copy; Sam Liebl. All rights reserved. This content may not be used or reproduced without permission.
+1. For content in `poems`, `work` directories:  
+&copy; Sam Liebl 2024. All rights reserved. This content may not be used or reproduced without permission.

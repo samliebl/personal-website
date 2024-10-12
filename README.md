@@ -4,18 +4,21 @@ My website. [Located here](https://samliebl.com/).
 
 ## Contents
 
-1. [Construction](#section_construction)
-1. [Site Content](#section_content)
-1. [Acknowledgments](#section_acknowledgments)
-1. [License](#section_license)
+1. [Construction](#section_Construction)
+1. [Site Content](#section_SiteContent)
+	1. [Poems](#section_Poems)
+		1. [Poems to-do list](#section_PoemsToDoList)
+1. [Acknowledgments](#section_Acknowledgments)
+1. [License](#section_License)
+1. [Notes](#section_Notes)
 
 ---
 
-<h2 id="section_construction">Construction</h2>
+<h2 id="section_Construction">Construction</h2>
 
 It&rsquo;s just basic HTML and CSS. There is some JavaScript in a footer so that the current year always displays.
 
-<h2 id="section_content">Site Content</h2>
+<h2 id="section_SiteContent">Site Content</h2>
 
 This site contains content in the form of a) **writing**, b) **portfolio items** and c) **professional information**.
 
@@ -23,9 +26,11 @@ This site contains content in the form of a) **writing**, b) **portfolio items**
 1. Portfolio items &rarr; `/work/work.html`
 1. Professional information &rarr;  `/work/skills.html`
 
-#### Poems
+<h4 id="section_Poems">Poems</h4>
 
 I write poems and post them intermittently. These are the collections of them with to-do's to keep me organized.
+
+<h5 id="section_PoemsToDoList">Poems to-do list</h5>
 
 1. ~~**Young** (2010-2013)~~ ✓  
 1. **Stranger** (2015–2022)  
@@ -48,17 +53,17 @@ I write poems and post them intermittently. These are the collections of them wi
 	I Should Be Working  
 	Beloved, K.  
 	It Was Love, So We Ran Away  
-	My Death (1) and  
-	&emsp;Funeral (2)  
-	&emsp;Judgement (3)  
-	&emsp;Going to Hell (4)  
-	&emsp;Going to Heaven (5)  
-	Poems by  
-	&emsp;Women About Men (1)  
-	&emsp;Men About Women (2)
+	**My Death** (1/5) and…  
+	&emsp;Funeral (2/5)  
+	&emsp;Judgement (3/5)  
+	&emsp;Going to Hell (4/5)  
+	&emsp;Going to Heaven (5/5)  
+	**Poems by**…  
+	&emsp;Women About Men (1/2)  
+	&emsp;Men About Women (2/2)
 
 
-<h2 id="section_acknowledgments">Acknowledgments</h2>
+<h2 id="section_Acknowledgments">Acknowledgments</h2>
 
 <details>
 	<summary>Acknowledgments</summary>
@@ -90,12 +95,12 @@ I write poems and post them intermittently. These are the collections of them wi
 
 Thanks for visiting.
 
-<h2 id="section_license">License</h2>
+<h2 id="section_License">License</h2>
 
 Please consider everything *except for any and all content in `poems` directory*¹ available under the license in project directory (MIT).
 
 ---
 
-<h4 id="section_notes">Notes</h4>
+<h4 id="section_Notes">Notes</h4>
 
 1. For content in `poems`: &copy; Sam Liebl. All rights reserved. This content may not be used or reproduced without permission.

@@ -1,0 +1,7 @@
+## changelog personal-website
+
+2024-10-13
+-added stranger:There are all the girls
+-added preface
+-added preface:how
+-added CHANGELOG

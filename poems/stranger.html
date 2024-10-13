@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SL</title>
+    <title>SL Poems: Stranger</title>
     <link rel="icon" type="image/png" href="../droplet-favicon.png" />
     <link rel="icon" type="image/png" href="../Droplet.png" />
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
@@ -44,6 +44,12 @@
                 <nav class="toc measure" id="PoetryToc">
                     <h3>Stranger</h3>
                     <p>From around <span class="inter">~</span>2015<span class="inter">–</span>2022 or so.</p>
+                    <table>
+                        <tr>
+                            <td>Poems</td>
+                            <td><span id="poemCount"></span></td>
+                        </tr>
+                    </table>
                     <ul class="navlist stranger">
                         <li>
                             <!-- Stranger Collection -->
@@ -54,6 +60,7 @@
                                         <li><a href="#How">How</a></li>
                                     </ul>
                                 </li>
+                                <li class="list-break"><span class="gray-700 inter">•&emsp;•&emsp;•&emsp;•&emsp;•</span></li>
                                 <li><a href="#WouldThatOurLivesNotBeSeparate">Would That Our Lives Not Be Separate</a></li>
                                 <li><a href="#IHateToGoToBedAtNight">I Hate to Go to Bed at Night</a></li>
                                 <li><a href="#YouDidntBreakMyHeart">You didn’t break my heart</a></li>
@@ -80,7 +87,7 @@
                                 <li><a href="#SheWantsAndIsNotAfraidToWant">She wants, and is not afraid to want</a></li>
                                 <li><a href="#TogetherWeWereAir">Together, we were air</a></li>
                                 <li><a href="#ThereAreAllTheGirls">There are all the girls</a></li>
-                                <li><span class="gray-700 inter">•&emsp;•&emsp;•&emsp;•&emsp;•</span></li>
+                                <li class="list-break"><span class="gray-700 inter">•&emsp;•&emsp;•&emsp;•&emsp;•</span></li>
                                 <li class="subitems">
                                     <h3 class="m0">Untitleds</h3>
                                     <ul>
@@ -1027,6 +1034,7 @@
     <!-- Display the current year for the copyright footer -->
     <script src="../js/main.js"></script>
     <script type="text/javascript">
+    countPoems();
     displayCurrentYear();
     </script>
 </body>

@@ -13,6 +13,23 @@ function displayCurrentYear() {
     document.getElementById('yearDisplay').innerText = currentYear;
 }
 
+function countPoems() {
+    // Count the number of elements with the class 'poem'
+    const poemElements = document.querySelectorAll('.poem').length;
+    
+    // Print the number to the console
+    console.log('Number of poem elements:', poemElements);
+
+    // Write the number to the span with ID 'poemCount'
+    const poemCountSpan = document.getElementById('poemCount');
+    if (poemCountSpan) {
+        poemCountSpan.innerText = poemElements;
+    } else {
+        console.error('Span element with id "poemCount" not found');
+    }
+}
+
+
 function generateListNumbers() {
     // Select all top-level bucket list containers
     const bucketLists = document.querySelectorAll('.bucket-list');

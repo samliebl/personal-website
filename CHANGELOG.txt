@@ -6,3 +6,9 @@
 -added preface
 -added preface:how
 -added CHANGELOG
+
+--
+
+17:22:10
+-added in JavaScript function that counts the numbers of poems on the page, but only added it to stranger
+-updated titles on poetry pages

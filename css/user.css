@@ -1137,3 +1137,19 @@ img {
     visibility: visible;
     opacity: 1;
 }
+
+.list-break {
+    width: 100%;
+}
+
+table, tr, thead, tfoot, tbody, td, th {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    border:none;
+    border-collapse: collapse;
+}
+
+td {
+    min-width: 4rem;
+}

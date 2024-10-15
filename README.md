@@ -2,7 +2,7 @@
 
 My website. [Located here](https://samliebl.com/).
 
-## Contents
+#### Contents
 
 1. [Construction](#section_Construction)
 1. [Site Content](#section_SiteContent)
@@ -14,8 +14,6 @@ My website. [Located here](https://samliebl.com/).
 1. [License](#section_License)
 1. [Notes](#section_Notes)
 
----
-
 <!-- Construction -->
 
 <h2 id="section_Construction">Construction</h2>
@@ -24,7 +22,37 @@ It&rsquo;s just basic HTML and CSS. There is some JavaScript in a footer so that
 
 <!-- Site Content -->
 
-<h2 id="section_SiteContent">Site Content</h2>
+<h3 id="section_SiteContent">Site Content</h3>
+
+<h4 id="section_DirectoryStructure">Directory Structure</h4>
+
+```
+.
+|- css/
+   |- vendor/
+   |  |- normalize.css
+   |  |- style.css
+   |  |- tachyons.pieces.css
+   |
+   |- index.css
+   |- user.css
+ 
+|- js/
+   |- main.js
+ 
+|- poems/
+   |- poems.html
+   |- stranger.html
+   |- young
+ 
+|- work/
+   |- skills.html
+   |- work.html
+|
+|- about.html
+|- colophon.html
+|- index.html
+```
 
 This site contains content in the forms of a) **writing**, b) **portfolio items** and c) **professional information**.
 
@@ -50,6 +78,7 @@ I write poems and post them intermittently. These are the collections of them wi
 	The Words in Me  
 	~~When I Love You is in the Mornings~~ ✓  
 	~~Together, we were air~~ ✓  
+	~~There are all the girls~~ ✓  
 	You girls are like me  
 	Dearest,&ensp;J.&ensp;D.
 1. **Someone** (2024)  
@@ -76,7 +105,7 @@ I write poems and post them intermittently. These are the collections of them wi
 
 <!-- Portfolio items  -->
 
-<h2 id="section_PortfolioItems">Portfolio items</h2>
+<h3 id="section_PortfolioItems">Portfolio items</h3>
 
 Things I've made and designed. Logos, illustrations, mockups, etc.
 
@@ -99,14 +128,16 @@ Things I've done and what I've learned
 
 Location(s): `work/skills.html`, `work/work.html`
 
+---
+
 <!-- Acknowledgments -->
 
-<h2 id="section_Acknowledgments">Acknowledgments</h2>
+<h4 id="section_Acknowledgments">Acknowledgments</h4>
 
 Selected dependencies and inspiration
 
 <details>
-	<summary>Acknowledgments</summary>
+	<summary>Acknowledgments *(click to expand)*</summary>
 
 - HTML5 Boilerplate + their CSS template  
 [[Website](https://html5boilerplate.com)] [[GitHub](https://github.com/h5bp/html5-boilerplate)]  
@@ -129,13 +160,9 @@ Selected dependencies and inspiration
 
 </details>
 
----
-
-Thanks for visiting.
-
 <!-- License -->
 
-<h2 id="section_License">License</h2>
+<h4 id="section_License">License</h4>
 
 Please consider everything *except for any and all content in `poems`, `work` directories*¹ available under the license (MIT) in project directory `./LICENSE.txt`.
 
@@ -145,3 +172,12 @@ Please consider everything *except for any and all content in `poems`, `work` di
 
 1. For content in `poems`, `work` directories:  
 &copy; Sam Liebl 2024. All rights reserved. This content may not be used or reproduced without permission.
+
+---
+
+> Make your choice, adventurous Stranger,  
+Strike the bell and bide the danger,  
+Or wonder, till it drives you mad,  
+What would have followed if you had.
+
+Thanks for visiting•••SL

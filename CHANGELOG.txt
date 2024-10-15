@@ -12,3 +12,14 @@
 17:22:10
 -added in JavaScript function that counts the numbers of poems on the page, but only added it to stranger
 -updated titles on poetry pages
+
+21:44:23
+-updates to README.md incl § on directory structure, the cs lewis poem, thanks for visiting, reduced the headers in size a bit
+
+---
+
+2024-10-15
+
+06:49:19
+
+Added an allusion to the golden ass for eros and psyche and did corresponding CSS edits to get the rendering where I want it to be

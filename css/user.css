@@ -562,6 +562,9 @@ aside.notes {
     font-size: 0.8rem;
     border: var(--moon-gray) 0.0625rem solid;
     max-width: 30rem;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 aside.notes+.top {

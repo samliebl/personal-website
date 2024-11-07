@@ -43,6 +43,7 @@
     --inter-font-feature-settings: 'liga'1, 'calt'1;
     /* fix for Chrome */
     --font-size: 1rem;
+    --font-size-italic: 1.05rem;
     --font-size-monospace: calc(var(--font-size)*0.85);
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -786,10 +787,12 @@ var {
 
 .allusion p {
     margin: 0;
+    font-style: italic;
+    font-size: var(--font-size-italic);
 }
 
 blockquote.allusion {
-    max-width: 20rem;
+    max-width: 24rem;
 }
 
 blockquote.allusion cite {

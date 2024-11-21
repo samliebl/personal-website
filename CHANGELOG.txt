@@ -10,11 +10,13 @@
 --
 
 17:22:10
--added in JavaScript function that counts the numbers of poems on the page, but only added it to stranger
--updated titles on poetry pages
+- added in JavaScript function that counts the numbers of poems on the page, 
+  but only added it to stranger
+- updated titles on poetry pages
 
 21:44:23
--updates to README.md incl § on directory structure, the cs lewis poem, thanks for visiting, reduced the headers in size a bit
+- updates to README.md incl § on directory structure, the cs lewis poem, thanks 
+  for visiting, reduced the headers in size a bit
 
 ---
 
@@ -36,3 +38,10 @@ Added in some poem count metrics for Young
 
 - Updated poems on poems.html, specifically in allusions and a new 'invocation'
 - worked/updated corresponding CSS.
+
+06:38:47
+
+- Rm `class="no-js"` from html `<head>` elements side-wide
+- Update favicons/site icon assets.
+- Rm problematic SVGs from `work/skills.html`--need to figure out issue.
+- Updated formatting on CHANGELOG--doing max width 80 char.

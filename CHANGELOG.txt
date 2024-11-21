@@ -22,8 +22,17 @@
 
 06:49:19
 
-Added an allusion to the golden ass for eros and psyche and did corresponding CSS edits to get the rendering where I want it to be
+Added an allusion to the golden ass (if only this work had a better name...) for eros and psyche and did corresponding CSS edits to get the rendering where I want it to be
 
 06:55:33
 
 Added in some poem count metrics for Young
+
+---
+
+2024-11-21
+
+06:33:19
+
+- Updated poems on poems.html, specifically in allusions and a new 'invocation'
+- worked/updated corresponding CSS.

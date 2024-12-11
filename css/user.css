@@ -729,7 +729,7 @@ p:nth-of-type(3)+.stanza.inter+p {
     margin: 0 0 1rem 0;
 }
 
-.alt {
+.alt, .alt-2 {
     font-style: italic;
     font-family: baskerville;
     font-weight: 400;
@@ -738,11 +738,11 @@ p:nth-of-type(3)+.stanza.inter+p {
     padding: 0 0 1rem 0;
 }
 
-.alt::before {
+.alt::before, .alt-2::before {
     content: "~\2003";
 }
 
-.alt::after {
+.alt-2::after {
     content: "\2003~";
 }
 

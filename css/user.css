@@ -1245,3 +1245,8 @@ td {
     font-size: 1.2rem;
     text-align: center;
 }
+
+.i1 {
+    text-indent: 1rem;
+    margin-left: 2rem;
+}

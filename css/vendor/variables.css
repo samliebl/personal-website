@@ -1,0 +1,266 @@
+/* Colors as variables */
+:root {
+    /* HTML5 Boilerplate */
+    --selection: hsla(213, 92%, 85%, 1);
+    /* Bootstrap */
+    --text: hsla(210, 2%, 11%, 1);
+    /* colors.css v0.2.0 */
+    --navy: hsla(216, 100%, 16%, 1);
+    --blue: hsla(225, 100%, 42%, 1);
+    --aqua: hsla(187, 100%, 49%, 1);
+    --teal: hsla(180, 100%, 40%, 1);
+    --olive: hsla(147, 100%, 34%, 1);
+    --green: hsla(114, 100%, 38%, 1);
+    --lime: hsla(68, 100%, 44%, 1);
+    --yellow: hsla(48, 100%, 50%, 1);
+    --orange: hsla(24, 100%, 50%, 1);
+    --red: hsla(355, 100%, 46%, 1);
+    --maroon: hsla(358, 100%, 14%, 1);
+    --fuchsia: hsla(319, 100%, 50%, 1);
+    --purple: hsla(262, 100%, 50%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --silver: hsla(0, 0%, 47%, 1);
+    --gray: hsla(0, 0%, 20%, 1);
+    --gray-900: hsla(190, 16%, 93%, 1);
+    --gray-700: hsla(205, 8%, 71%, 1);
+    --gray-500: hsla(180, 6%, 45%, 1);
+    --gray-300: hsla(183, 8%, 55%, 1);
+    --gray-100: hsla(0, 0%, 13%, 1);
+    --black: hsla(0, 0%, 0%, 1);
+    --moon-gray: hsla(0, 0%, 80%, 1);
+    /* My colors */
+    --whitesmoke: hsla(0, 0%, 96%, 1);
+    /* My styles */
+    --measure-width: 36rem;
+    --measure-width-midprose: calc(var(--measure-width)*0.7);
+    --width: calc(var(--measure-width)/16);
+    --width-1-2: calc(var(--width)/2);
+    --width-1-4: calc(var(--width)/4);
+    --width-1-5: calc(var(--width)/5);
+    /* Thanks to Inter by https://rsms.me/ */
+    --sans-serif: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --inter: Inter, sans-serif;
+    --inter-font-feature-settings: 'liga'1, 'calt'1;
+    /* fix for Chrome */
+    --font-size: 1rem;
+    --font-size-italic: 1.05rem;
+    --font-size-monospace: calc(var(--font-size)*0.85);
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
+html,
+body {
+    /* For WebKit (Chrome, Safari) */
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* For Firefox */
+    font-smoothing: antialiased;
+    /* For Edge */
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: var(--text);
+}
+
+.text {
+    color: hsla(210, 10%, 23%, 1);
+}
+
+.navy {
+    color: hsla(216, 100%, 16%, 1);
+}
+
+.blue {
+    color: hsla(225, 100%, 42%, 1);
+}
+
+.aqua {
+    color: hsla(187, 100%, 49%, 1);
+}
+
+.teal {
+    color: hsla(180, 100%, 40%, 1);
+}
+
+.olive {
+    color: hsla(147, 100%, 34%, 1);
+}
+
+.green {
+    color: hsla(114, 100%, 38%, 1);
+}
+
+.lime {
+    color: hsla(68, 100%, 44%, 1);
+}
+
+.yellow {
+    color: hsla(48, 100%, 50%, 1);
+}
+
+.orange {
+    color: hsla(24, 100%, 50%, 1);
+}
+
+.red {
+    color: hsla(355, 100%, 46%, 1);
+}
+
+.maroon {
+    color: hsla(358, 100%, 14%, 1);
+}
+
+.fuchsia {
+    color: hsla(319, 100%, 50%, 1);
+}
+
+.purple {
+    color: hsla(262, 100%, 50%, 1);
+}
+
+.white {
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.silver {
+    color: hsla(0, 0%, 47%, 1);
+}
+
+.gray {
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.black {
+    color: hsla(0, 0%, 0%, 1);
+}
+
+.moon-gray {
+    color: hsla(0, 0%, 80%, 1);
+}
+
+.whitesmoke {
+    color: hsla(0, 0%, 96%, 1);
+}
+
+.gray-900 {
+    color: var(--gray-900);
+}
+
+.gray-700 {
+    color: var(--gray-700);
+}
+
+.gray-500 {
+    color: var(--gray-500);
+}
+
+.gray-300 {
+    color: var(--gray-300);
+}
+
+.gray-100 {
+    color: var(--gray-100);
+}
+
+.bg-gray-900 {
+    color: var(--gray-900);
+}
+
+.bg-gray-700 {
+    color: var(--gray-700);
+}
+
+.bg-gray-500 {
+    color: var(--gray-500);
+}
+
+.bg-gray-300 {
+    color: var(--gray-300);
+}
+
+.bg-gray-100 {
+    color: var(--gray-100);
+}
+
+.bg-text {
+    background-color: hsla(210, 10%, 23%, 1);
+}
+
+.bg-navy {
+    background-color: hsla(216, 100%, 16%, 1);
+}
+
+.bg-blue {
+    background-color: hsla(225, 100%, 42%, 1);
+}
+
+.bg-aqua {
+    background-color: hsla(187, 100%, 49%, 1);
+}
+
+.bg-teal {
+    background-color: hsla(180, 100%, 40%, 1);
+}
+
+.bg-olive {
+    background-color: hsla(147, 100%, 34%, 1);
+}
+
+.bg-green {
+    background-color: hsla(114, 100%, 38%, 1);
+}
+
+.bg-lime {
+    background-color: hsla(68, 100%, 44%, 1);
+}
+
+.bg-yellow {
+    background-color: hsla(48, 100%, 50%, 1);
+}
+
+.bg-orange {
+    background-color: hsla(24, 100%, 50%, 1);
+}
+
+.bg-red {
+    background-color: hsla(355, 100%, 46%, 1);
+}
+
+.bg-maroon {
+    background-color: hsla(358, 100%, 14%, 1);
+}
+
+.bg-fuchsia {
+    background-color: hsla(319, 100%, 50%, 1);
+}
+
+.bg-purple {
+    background-color: hsla(262, 100%, 50%, 1);
+}
+
+.bg-white {
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.bg-silver {
+    background-color: hsla(0, 0%, 47%, 1);
+}
+
+.bg-gray {
+    background-color: hsla(0, 0%, 20%, 1);
+}
+
+.bg-black {
+    background-color: hsla(0, 0%, 0%, 1);
+}
+
+.bg-moon-gray {
+    background-color: hsla(0, 0%, 80%, 1);
+}
+
+.bg-whitesmoke {
+    background-color: hsla(0, 0%, 96%, 1);
+}
+
+.nolist {
+    list-style: none;
+    padding: 0;
+}

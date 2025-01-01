@@ -1,0 +1,223 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/style.css);
+@import url(../vendor/variables.css);
+
+
+/* Quotes opening lines */
+
+/*
+
+{d} "double"
+{s} "single"
+{l} "left" (instead of "push"/"pull")
+{r} "right" (see above)
+
+.dl = .dquo-open-pull
+
+*/
+
+html {
+/*    font-size: 1rem;*/
+}
+
+.fs4 {
+    font-size: 4vw;
+}
+
+.fs1 {
+    font-size: 2rem;
+}
+
+.fs2 {
+    font-size: 3rem;
+}
+
+.fs3 {
+    font-size: 5rem;
+}
+
+.fs0 {
+    font-size: 1.25rem;
+}
+.p {
+    max-width: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+.fb {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+.block {
+    flex: 1;
+    padding: 4rem;
+}
+
+.dr,
+.sr {
+    display: initial;
+}
+
+.dr {
+    margin-right: 0.5em;
+}
+
+.dl {
+    margin-left: -0.4em;
+}
+
+.sr {
+    margin-right: 0.25em;
+}
+
+.sl {
+    margin-left: -0.25em;
+}
+
+.red {
+    color: red;
+}
+
+.i {
+    font-style: italic;
+}
+
+.title {
+    letter-spacing: 0.03em;
+}
+
+.keywords {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.keywords li {
+    display: inline-block;
+}
+
+.keyword::after {
+    content: "•";
+    color: var(--gray-700);
+    margin: 0 2rem;
+}
+
+.chapter-head p {
+    margin: 0;
+    text-align: center;
+}
+
+.spacer {
+    height: 35vh;
+}
+
+.crawl {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.crawl p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.75px;
+}
+
+.lug {
+    margin-top: 3rem;
+}
+
+.lug::after {
+    content: "•";
+    text-align: center;
+    display: block;
+}
+
+.chapter-open,
+.crawl-open {
+    font-variant: small-caps;
+    line-height: 0;
+}
+.chapter-open {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.crawl-open {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+.crawl .sc {
+    font-variant: small-caps;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+.crawl .uc {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    line-height: 0;
+}
+
+
+cite {
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+cite:first-of-type {
+    margin-top: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.block-allusion, {
+.block-allusion,
+.allusion p {
+    padding:1rem;
+    max-width: 100rem;
+    text-align: left;
+}
+
+
+.allusion p {
+    font-size:1rem;
+    line-height: 1rem;
+}
+
+.i {
+    font-size: 1.25rem;
+}
+
+.allusion cite {
+    display: block;
+    font-style: normal;
+}
+
+.allusion p cite em {
+    font-size: 1.5rem;
+}
+.sc {
+    font-variant: small-caps;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+.uc {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    line-height: 0;
+}

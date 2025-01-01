@@ -23,29 +23,41 @@
         text-align: center;
         font-size: 1.2rem;
     }
-    .lug + p.stanza.prose {
-        margin-top:1rem;
+
+    .lug+p.stanza.prose {
+        margin-top: 1rem;
     }
+
     .crawl {
         max-width: 28rem;
         margin: 0 auto;
     }
+
     .stanza.prose {
         font-size: 1.2rem;
         line-height: 1.4;
     }
+
     .before-chapter {
         margin-top: 20vh;
     }
+
     .before-chapter::after {
         content: "✷ ✷ ✷";
     }
+
     .down-arrow {
         margin-bottom: 5vh;
         margin-top: 5vh;
     }
+
     .down-arrow::before {
         content: "\2193";
+    }
+
+    .allusion-list {
+        list-style: none;
+        padding: 0;
     }
     </style>
 </head>
@@ -85,16 +97,16 @@
                         <li>The son of a powerful duke fights to keep his country together against enemies inside and out, guarding a secret so dark it would destroy everything he loves.</li>
                         <li>Medieval Fantasy&emsp;&bull;&emsp;Magic&emsp;&bull;&emsp;Adventure and personal growth</li>
                     </ul>
-                    <h3>- S L</h3>
+                    <p><em>by</em>&ensp;Sam Liebl</p>
                     <span class="fleuron">☙</span>
                     <h3>Contents</h3>
                     <ul class="navlist">
                         <li><a href="#Chapter_01">Chapter I</a>&emsp;<span class="inter tabular-nums">1.0.0</span>&emsp;<em>January 1, 2025</em></li>
                     </ul>
-                <div class="down-arrow"></div>
+                    <div class="down-arrow"></div>
                 </nav>
                 <hr>
-                <!-- Untitled 26 -->
+                <!-- Chapter 1 -->
                 <article class="poem prose measure" id="Chapter_01">
                     <div class="before-chapter"></div>
                     <h3>Chapter I: Rumors and Departure</h3>
@@ -103,6 +115,49 @@
                         <p>Snippets of literature in the world of the novel. Skip ahead or click ‘Details’ to read.</p>
                         <summary>
                             <details>
+                                <p>[…]&ensp;You asked me can you join me<br>
+                                    on a walk at home, could I please?<br>
+                                    you had word you would share<br>
+                                    By the glade of cherry trees, I said<br>
+                                    I will meet you there.</p>
+                                <p>Wondering in fear, as I too often do,<br>
+                                    what news you&#8217;d say that afternoon<br>
+                                    What happening so hurt your conscience,<br>
+                                    come up among us since<br>
+                                    a spring and summer of innocence<br>
+                                    the inflorescent hours you and I spent<br>
+                                    in the glade of blooming cherry trees,<br>
+                                    the baby saplings in their nurseries<br>
+                                    that came and went<br>
+                                    in languid waste, joyous space</p>
+                                <p>in the orchard where you and I would meet<br>
+                                    The shadows upon your face<br>
+                                    were no longer those cast by the cherry trees<br>
+                                    it was a new dark that would not leave<br>
+                                    the softened curve of your cheek.</p>
+                                <p>which had only just begun to flower<br>
+                                    mind, intrigue and apprehension beckoned&ensp;[…]</p>
+                                <ul class="allusion-list">
+                                    <li>Vimíçitus¹</li>
+                                    <li>“When It Was the End of Summer”</li>
+                                    <li><em>Remembrances from Youth in Ellabeth</em></li>
+                                    <li>(1) **Poet; maxiprinex soloway period; member of yuve·shewe movement</li>
+                                </ul>
+                                <span class="fleuron">☙</span>
+                                <p>So long as man has walked the earth, another has plotted to kill him. To end war is to end men.</p>
+                                <ul class="allusion-list">
+                                    <li>Sínitas</li>
+                                    <li><em>Collected Sayings</em></li>
+                                </ul>
+                                <span class="fleuron">☙</span>
+                                <p>I tell will you now, here at the outset, that to lash other men with sword and spear, to set upon his works, his works with fire and to spill the blood of his family upon his own fields, is the great sin of all people in this fallen world.
+                                    The prospect we might abandon this evil appears too far away to grasp, but it is not. We can capture it if we but reach a little farther—if we want to have peace, we can.</p>
+                                <ul class="allusion-list">
+                                    <li>Mardeyros Alberend</li>
+                                    <li>Contare Rataka ad Lyseklesta 1·3²</li>
+                                    <li>(2) ‘Against War Upon Lyseklesta’; Address 1 of 3.</li>
+                                    <li>Addresses to the IV·Tandrat by its Members</li>
+                                </ul>
                             </details>
                         </summary>
                     </aside>
@@ -173,6 +228,29 @@
     <script type="text/javascript">
     displayCurrentYear();
     countPoems();
+    // Novel word count
+    document.addEventListener('DOMContentLoaded', () => {
+        // Select all elements matching the given selector
+        const elements = document.querySelectorAll('p.stanza.prose');
+
+        let wordCount = 0;
+
+        elements.forEach(element => {
+            // Get the text content of each element
+            const text = element.textContent || '';
+            // Split the text into words using a regular expression and count them
+            const words = text.match(/\b\w+\b/g); // Match words
+            if (words) {
+                wordCount += words.length;
+            }
+        });
+const formattedWordCount = wordCount.toLocaleString();
+        // Find the element with ID 'wordCount' and display the result
+        const wordCountElement = document.getElementById('wordCount');
+        if (wordCountElement) {
+            wordCountElement.textContent = `${formattedWordCount}`;
+        }
+    });
     </script>
 </body>
 

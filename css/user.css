@@ -1250,3 +1250,7 @@ td {
     text-indent: 1rem;
     margin-left: 2rem;
 }
+
+ul.introduction.novel li {
+    margin-bottom: 1rem;
+}

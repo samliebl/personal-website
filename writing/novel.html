@@ -67,6 +67,17 @@
     .sb+p.stanza.prose {
         text-indent: 0;
     }
+    td {
+        padding-top:1rem;
+        padding-right: 1rem;
+        line-height: 1;
+    }
+    td em {
+        font-size: inherit;
+    }
+    td.inter {
+        font-size: 0.9rem;
+    }
     </style>
 </head>
 <!-- 
@@ -93,11 +104,11 @@
                 <p><a href="poems.html"><span class="inter">&larr;</span> Go back to writing and poetry homepage</a></p>
                 <hr>
                 <nav class="toc measure" id="PoetryToc">
-                    <h2>Eathel the Bastard</h2>
+                    <h2>Eathel <em class="red fw400">the Bastard</em></h2>
                     <table>
                         <tr>
                             <td><span id="wordCount"></span></td>
-                            <td>words</td>
+                            <td>words (so far)</td>
                         </tr>
                     </table>
                     <br>
@@ -108,9 +119,20 @@
                     <p><em>by</em>&ensp;Sam Liebl</p>
                     <span class="fleuron">☙</span>
                     <h3>Contents</h3>
-                    <ul class="navlist">
-                        <li><a href="#Chapter_01">Chapter I</a>&emsp;<span class="inter tabular-nums">1.0.0</span>&emsp;<em>January 1, 2025</em></li>
-                    </ul>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><u>Originally posted</u>:</td>
+                            <td><u>Last updated</u>:</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#Chapter_01">Chapter I</a></td>
+                            <td class="gray-500 fw300 inter tabular-nums">1.0.2</td>
+                            <td><em>January 1, 2025</em></td>
+                            <td><em>January 2, 2025</em></td>
+                        </tr>
+                    </table>
                     <div class="down-arrow"></div>
                 </nav>
                 <hr>

@@ -46,6 +46,7 @@
     --font-size-italic: 1.05rem;
     --font-size-monospace: calc(var(--font-size)*0.85);
     --roboto-mono: 'Roboto Mono', monospace;
+    --fw0: 400;
 }
 
 html,
@@ -1253,4 +1254,18 @@ td {
 
 ul.introduction.novel li {
     margin-bottom: 1rem;
+}
+
+
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw300 {
+    font-weight: 300;
 }

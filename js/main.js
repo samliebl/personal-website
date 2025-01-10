@@ -16,7 +16,7 @@ function displayCurrentYear() {
 function countPoems() {
     // Count the number of elements with the class 'poem'
     const poemElements = document.querySelectorAll('.poem').length;
-    
+
     // Print the number to the console
     console.log('Number of poem elements:', poemElements);
 
@@ -77,3 +77,8 @@ function generateListNumbers() {
         });
     });
 }
+
+document.querySelector('.accordion-header').addEventListener('click', function() {
+    const accordion = this.parentElement;
+    accordion.classList.toggle('open');
+});

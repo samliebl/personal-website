@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eathel the Bastard | Novel by Sam Liebl</title>
+    <link rel="icon" type="image/png" href="../../droplet-favicon.png" />
+    <link rel="icon" type="image/png" href="../../Droplet.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <meta name="description" content="Eathel the Bastard, a fantasy novel by Sam Liebl">
+    <style type="text/css">
+    p {
+        margin: 0
+    }
+
+    .lug {
+        margin-top: 5rem;
+    }
+
+    .lug::after {
+        content: "•";
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .lug+p.stanza.prose {
+        margin-top: 1rem;
+    }
+
+    .crawl {
+        max-width: 28rem;
+        margin: 0 auto;
+    }
+
+    .stanza.prose {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    .before-chapter {
+        margin-top: 20vh;
+    }
+
+    .before-chapter::after {
+        content: "✷ ✷ ✷";
+    }
+
+    .down-arrow {
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+
+    .down-arrow::before {
+        content: "\2193";
+    }
+
+    .allusion-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sb {
+        height: 1.5rem;
+    }
+
+    .sb+p.stanza.prose {
+        text-indent: 0;
+    }
+
+    td {
+        padding-top: 1rem;
+        padding-right: 1rem;
+        line-height: 1;
+    }
+
+    td em {
+        font-size: inherit;
+    }
+
+    td.inter {
+        font-size: 0.9rem;
+    }
+
+    .uc {
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        line-height: 0;
+        letter-spacing: 0.0312rem;
+    }
+
+    .section-open {
+        font-variant: small-caps;
+        line-height: 0;
+        letter-spacing: 0.0312rem;
+        font-size: 1.2rem;
+    }
+
+    .level {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .prose.ni {
+        text-indent: none;
+    }
+
+    .prose.ni.nm {
+        text-indent: none;
+        margin: 0 0 0 0;
+    }
+
+    .prose.ni.ws {
+        margin: 0 0 0.5rem 0;
+    }
+
+    .stanza.prose {
+        margin: 0 0 0 0;
+        text-indent: 2rem;
+    }
+
+    .accordion {
+        /* 300/16 */
+        /* Adjust to your desired width */
+        border: 0.0625em solid #ddd;
+        /* 1/16 */
+        border-radius: 0.0625em;
+        /* 1/16 */
+        overflow: hidden;
+        margin: 2rem 0;
+    }
+
+    .accordion-header {
+        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        /* Space between the triangle and text */
+        user-select: none;
+        font-size: 1rem;
+        /* Adjust for readability */
+    }
+
+    .accordion-indicator {
+        display: inline-block;
+        transition: transform 0.1s ease;
+    }
+
+    .accordion-content {
+        overflow: hidden;
+        transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+        padding: 0 1rem;
+    }
+
+    .accordion.open .accordion-indicator {
+        transform: rotate(90deg);
+        /* Rotate arrow to point down */
+    }
+
+    .accordion.open .accordion-content {
+        max-height: 12.5em;
+        /* 200/16 */
+        /* Adjust based on content */
+        padding: 1rem;
+    }
+
+    .al {
+        font-size: 0.9rem;
+        margin: 0 0 0 0;
+    }
+
+    .cite {
+        font-size: 0.9rem;
+        margin: 1rem 0;
+    }
+
+    .al+.al {
+        font-size: 0.9rem;
+        margin: 0 0 0 0;
+        text-indent: 2rem;
+    }
+
+    .line {
+        display: inline;
+    }
+
+    .line sup {
+        font-style: italic;
+        width: 0.25rem;
+        line-height: inherit;
+        text-align: left;
+    }
+    </style>
+</head>
+<!-- 
+    Code-folding on Sublime Text
+    Fold all      ⌘K, ⌘1
+    Fold lvl 2    ⌘K, ⌘2
+    Fold lvl 3    ⌘K, ⌘3
+    ...
+-->
+
+<body>
+    <div class="page flexc">
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <p><a href="../poems.html"><span class="inter">&uarr;</span></a> Go back to writing and poetry homepage</p>
+                <p><a href="novel.html"><span class="inter">&uarr;</span></a> Go back to novel table of contents</p>
+                <p>Chapter I <a href="chapter01.html"><span class="inter">&larr;</span></a></p>
+                <p>Chapter III: Riders in the Smoke <a class="disabled" href="chapter03.html"><span class="inter">&rarr;</span></a></p>
+                <hr>
+                <nav class="toc measure" id="PoetryToc">
+                    <!-- Chapter 1 -->
+                    <article class="poem prose measure">
+                        <div class="before-chapter"></div>
+                        <section id="Chapter_01">
+                            <h3>Chapter II: Riders</h3>
+                            <aside class="novel-allusion">
+                                <h4>Allusions</h4>
+                                <p>Snippets of literature in the world of the novel. Skip ahead or click ‘Details’ to read.</p>
+                                <summary class="">
+                                    Campaigns of Dagaszona IV Duke of Tera
+                                    <details class="accordion-content">
+                                        <p class="al">
+                                            <span class="line"><sup>8</sup>Zaselasz sent forward Maphari Radden, commander of the Bentessa, with 7,000 Turoqui, to ravage the Holy Teran Entitlement.</span>
+                                            <span class="line"><sup>9</sup>Only three corps of the cavalry under Dagaszona IV Tera remained, and their numbers were so diminished that combined they were no more than one thousand.</span>
+                                        </p>
+                                        <p class="al">
+                                            <span class="line"><sup>10</sup>But he dispatched Federos ad Dammech , as deft a commandant on horseback as any at that time, to harry Radden’s progress in the lands Tera had claimed during that campaign. </span>
+                                            <span class="line"><sup>11</sup>While Radden, the lieutenant of Zaselasz, then, was in the upper parts of the Entitlement, Federos engaged him on the serengeti that those living there call Valdonai </span>
+                                            <span class="line"><sup>12</sup>Federos, glory to Heaven and Tera, routed them in a swift attack that caught the enemy unawares, by employing the advantage of the horse to many men on foot.</span>
+                                        </p>
+                                        <p class="al">
+                                            <span class="line"><sup>13</sup>Federos is recorded by tradition to have in conference with his men before their initial foray,</span>
+                                            <span class="line"><sup>14</sup>“Let no man advance beyond the comrade to his left or his right. Hold the line.</span>
+                                            <span class="line"><sup>15</sup>As your animal excites to full gallop, prize unity over speed and force; letting no man drift behind or rush forward. </span>
+                                            <span class="line"><sup>16</sup>As one you must hit them. As one you will succeed.”</span>
+                                        </p>
+                                        <p class="al">
+                                            <span class="line"><sup>17</sup>This counsel was wise indeed, for this Battle of Valdonai devolved into great calamity for Radden on the advantage of that first column of riders in concert</span>
+                                            <span class="line"><sup>18</sup>and the ensuing melee they conducted in the mayhem of the battle,</span>
+                                            <span class="line"><sup>19</sup>harnessing thoroughly and to deadly effect the power of trained rider over infantrymen, as surely as a skilled rider harnesses the steed underneath him.</span>
+                                        </p>
+                                        <br>
+                                        <p class="cite">
+                                            Tourendahl Ofaander<br>
+                                            <span class="uc">Campaigns of Dagaszona IV Duke of Tera</span><br>
+                                            §3.0: <strong>In the Tandheran</strong><br>
+                                            §3:2:1(ii)・Itenerary of Campaign・1040・Spring・<sup>ln</sup><em>8-19</em>
+                                        </p>
+                                    </details>
+                                </summary>
+                            </aside>
+                            <span class="fleuron">☙</span>
+                            <div class="lug"></div>
+                            <div class="crawl">
+                                <p>
+                                    <em class="uc">Riders! —</em> Grenade 8-bit-ware noodles man realism table rifle tank-traps sentient Tank-traps drugs saturation point BASE jump jeans -space singularity garage network pistol. <span class="uc">boat youtube</span>. To put down the insurrection, he marches an <span class="uc">silent beef</span> garage-ware San Francisco decay warehouse futurity
+                                </p>
+                                <p>
+                                    Aturation point sensory beef noodles knife franchise gang monofilament 3D-printed sub-orbital <span class="uc">point</span> has recalled his son <span class="uc">Meta</span> post-corrupted table range-rover silent tanto <span class="uc">personally nodal</span>, numinous faded fluidity shoes fetishism <span class="uc">hotdog</span>, the new marshall spreads his trusted <span class="uc">spook courier forwards</span> and green <span class="uc">sub-orbital</span> in defense of the vast Teran <span class="uc">geodesic face</span>.
+                                </p>
+                                <p>
+                                    fluidity sunglasses smart-geodesic.<span class="uc">post-table</span>. Receding car sunglasses sign towards.
+                                </p>
+                            </div>
+                            <div class="lug"></div>
+                            <p class="stanza prose"><span class="chapter-open">The</p>
+                            <p class="stanza prose">This</p>
+                            <div class="sb"></div>
+                            <p class="stanza prose"><span class="section-open"><em>A</em> herald had arrived.</span></p>
+                            <p class="stanza prose"></p>
+                            <div class="level">
+                                <div class="">
+                                    Content
+                                </div>
+                                <div class="">
+                                    Right content
+                                </div>
+                            </div>
+                            <div class="top">
+                                <small class="inter"><a href="#PoetryToc">Top &uarr;</a></small>
+                            </div>
+                        </section>
+                    </article>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="flex spread">
+                    <div class="inline center">
+                        <small class="inter gray-200 light">&copy; Sam Liebl <span class="tabular-nums" id="yearDisplay"></span>.</small>
+                    </div>
+                    <div class="inline center">
+                        <em><small><a href="../colophon.html">Colophon</a></small></em>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Display the current year for the copyright footer -->
+    <script src="../../js/main.js"></script>
+    <script type="text/javascript">
+    displayCurrentYear();
+    countPoems();
+    // Novel word count
+    document.addEventListener('DOMContentLoaded', () => {
+        // Select all elements matching the given selector
+        const elements = document.querySelectorAll('p.stanza.prose');
+
+        let wordCount = 0;
+
+        elements.forEach(element => {
+            // Get the text content of each element
+            const text = element.textContent || '';
+            // Split the text into words using a regular expression and count them
+            const words = text.match(/\b\w+\b/g); // Match words
+            if (words) {
+                wordCount += words.length;
+            }
+        });
+        const formattedWordCount = wordCount.toLocaleString();
+        // Find the element with ID 'wordCount' and display the result
+        const wordCountElement = document.getElementById('wordCount');
+        if (wordCountElement) {
+            wordCountElement.textContent = `${formattedWordCount}`;
+        }
+    });
+    </script>
+</body>
+
+</html>

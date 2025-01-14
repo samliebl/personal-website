@@ -1,0 +1,223 @@
+p {
+    margin: 0;
+}
+
+.lug {
+    margin-top: 5rem;
+}
+
+.lug::after {
+    content: "•";
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.lug+p.stanza.prose {
+    margin-top: 1rem;
+}
+
+.crawl {
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
+.stanza.prose {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin: 0 0 0 0;
+    text-indent: 2rem;
+}
+
+.before-chapter {
+    margin-top: 20vh;
+}
+
+.before-chapter::after {
+    content: "✷ ✷ ✷";
+}
+
+.down-arrow {
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.down-arrow::before {
+    content: "\2193";
+}
+
+.allusion-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sb {
+    height: 1.5rem;
+}
+
+.sb+p.stanza.prose {
+    text-indent: 0;
+}
+
+td {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    line-height: 1;
+}
+
+td em {
+    font-size: inherit;
+}
+
+td.inter {
+    font-size: 0.9rem;
+}
+
+.uc {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    line-height: 0;
+    letter-spacing: 0.0312rem;
+}
+
+.section-open {
+    font-variant: small-caps;
+    line-height: 0;
+    letter-spacing: 0.0312rem;
+    font-size: 1.2rem;
+}
+
+.level {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem 0;
+}
+
+.prose {
+    text-align: justify;
+}
+
+.prose.ni {
+    text-indent: none;
+}
+
+.prose.ni.nm {
+    text-indent: none;
+    margin: 0 0 0 0;
+}
+
+.prose.ni.ws {
+    margin: 0 0 0.5rem 0;
+}
+
+.accordion {
+    border: 0.0625em solid #ddd;
+    border-radius: 0.0625em;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+    font-size: 1rem;
+}
+
+.accordion-indicator {
+    display: inline-block;
+    transition: transform 0.1s ease;
+}
+
+.accordion-content {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+    padding: 0 1rem;
+}
+
+.accordion.open .accordion-indicator {
+    transform: rotate(90deg);
+}
+
+.accordion.open .accordion-content {
+    max-height: 12.5em;
+    padding: 1rem;
+}
+
+.al {
+    font-size: 0.9rem;
+    margin: 0 0 0 0;
+}
+
+.cite {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+.al+.al {
+    font-size: 0.9rem;
+    margin: 0 0 0 0;
+    text-indent: 2rem;
+}
+
+.p-level+.p-level {
+    text-indent: 1rem;
+}
+
+.line {
+    display: inline;
+}
+
+.line sup {
+    font-style: italic;
+    width: 0.25rem;
+    line-height: inherit;
+    text-align: left;
+}
+
+.dquo-open-push {
+    display: initial;
+    margin-right: 0.5em;
+}
+
+.dquo-open-pull {
+    margin-left: -0.35em;
+}
+
+.squo-open-push {
+    display: initial;
+    margin-right: 0.25em;
+}
+
+.squo-open-pull {
+    margin-left: -0.25em;
+}
+
+.y2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.y1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.y05 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.c {
+    text-align: center;
+}
+
+.level {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem 0;
+}

@@ -5,8 +5,10 @@
 /* Import normalize.css & HTML5 Boilerplate */
 @import url(vendor/normalize.css);
 @import url(vendor/style.css);
-
+/* Tachyons pieces for images */
 @import url(vendor/tachyons.pieces.css);
+/* Novel styles */
+@import url('vendor/novel.css');
 
 /* Author, user custom styles */
 @import url(user.css)

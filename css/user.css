@@ -577,12 +577,6 @@ aside.notes+.top {
     font-variant: small-caps;
 }
 
-.level {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .level * {
     margin: 0 1rem 0 0;
 }

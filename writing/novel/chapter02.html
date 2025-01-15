@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="../../css/index.css">
     <meta name="description" content="Eathel the Bastard, a fantasy novel by Sam Liebl">
-   
 </head>
 <!-- 
     Code-folding on Sublime Text
@@ -36,6 +35,7 @@
         </header>
         <main>
             <div class="container">
+                <p id="wordCount"></p>
                 <p><a href="../poems.html"><span class="inter">&uarr;</span></a> Go back to writing and poetry homepage</p>
                 <p><a href="novel.html"><span class="inter">&uarr;</span></a> Go back to novel table of contents</p>
                 <p>Chapter I <a href="chapter01.html"><span class="inter">&larr;</span></a></p>
@@ -45,7 +45,7 @@
                     <!-- Chapter 1 -->
                     <article class="poem prose measure">
                         <div class="before-chapter"></div>
-                        <section id="Chapter_02">
+                        <section class="chapter" id="Chapter_02">
                             <h3>Chapter II: Riders</h3>
                             <aside class="novel-allusion">
                                 <h4>Allusions</h4>
@@ -115,7 +115,6 @@
                             </div>
                         </section>
                     </article>
-                    
             </div>
         </main>
         <footer>
@@ -137,26 +136,22 @@
     displayCurrentYear();
     countPoems();
     // Novel word count
-    document.addEventListener('DOMContentLoaded', () => {
-        // Select all elements matching the given selector
-        const elements = document.querySelectorAll('p.stanza.prose');
-
+    document.addEventListener("DOMContentLoaded", () => {
         let wordCount = 0;
 
-        elements.forEach(element => {
-            // Get the text content of each element
-            const text = element.textContent || '';
-            // Split the text into words using a regular expression and count them
-            const words = text.match(/\b\w+\b/g); // Match words
-            if (words) {
-                wordCount += words.length;
-            }
+        const chapterSections = document.querySelectorAll("section.chapter");
+        chapterSections.forEach(section => {
+            const paragraphs = section.querySelectorAll("p");
+            paragraphs.forEach(p => {
+                wordCount += p.textContent.split(/\s+/).filter(word => word.trim().length > 0).length;
+            });
         });
-        const formattedWordCount = wordCount.toLocaleString();
-        // Find the element with ID 'wordCount' and display the result
-        const wordCountElement = document.getElementById('wordCount');
-        if (wordCountElement) {
-            wordCountElement.textContent = `${formattedWordCount}`;
+
+        const wordCountSpan = document.getElementById("wordCount");
+        if (wordCountSpan) {
+            wordCountSpan.textContent = wordCount.toLocaleString(); // Adds comma separators
+        } else {
+            console.error("Span with id 'wordCount' not found.");
         }
     });
     </script>

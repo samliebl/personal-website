@@ -1213,7 +1213,7 @@ th {
 }
 
 td {
-    min-width: 4rem;
+    padding: 0.5rem;
 }
 
 .resume address {

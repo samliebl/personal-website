@@ -59,6 +59,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     color: var(--text);
+    font-family: var(--inter);
+    font-size: 0.95rem;
+    line-height: 1.5rem;
 }
 
 .text {

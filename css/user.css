@@ -40,6 +40,7 @@
     /* Thanks to Inter by https://rsms.me/ */
     --sans-serif: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     --inter: Inter, sans-serif;
+    --serif: 'Times New Roman', Times, serif;
     --inter-font-feature-settings: 'liga'1, 'calt'1;
     /* fix for Chrome */
     --font-size: 1rem;
@@ -59,8 +60,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     color: var(--text);
-    font-family: var(--inter);
-    font-size: 0.95rem;
+    font-family: var(--serif);
+    font-size: 1rem;
     line-height: 1.5rem;
 }
 

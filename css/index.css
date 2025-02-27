@@ -8,7 +8,8 @@
 /* Tachyons pieces for images */
 @import url(vendor/tachyons.pieces.css);
 /* Novel styles */
-@import url('vendor/novel.css');
-
+@import url(vendor/novel.css);
+/* Import helper classes */
+@import url(vendor/classes.css);
 /* Author, user custom styles */
 @import url(user.css)

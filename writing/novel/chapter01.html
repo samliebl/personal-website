@@ -36,14 +36,13 @@
         <main>
             <div class="container">
                 <p id="wordCount"></p>
-                <p><a href="../poems.html"><span class="inter">&larr;</span></a> Go back to writing and poetry homepage</p>
-                <p><a href="novel.html"><span class="inter">&larr;</span></a> Go back to novel table of contents</p>
-                <p><a href="chapter02.html"><span class="inter">&rarr;</span></a> Chapter II: Riders in the Smoke</p>
+                <p><a href="../poems.html"><span class="inter">&uarr;</span></a> Go back to writing and poetry homepage</p>
+                <p><a href="index.html"><span class="inter">&larr;</span></a> Go back to novel table of contents</p>
+                <p><a href="chapter02.html"><span class="inter">&rarr;</span></a> Chapter II: The Duel in the Forest</p>
                 <hr>
                 <nav class="toc measure" id="PoetryToc">
                     <!-- Chapter 1 -->
                     <article class="poem prose measure">
-                        <p><em>Five days previous to the fight in the forest…</em></p>
                         <div class="before-chapter"></div>
                         <section class="chapter" id="Chapter_01">
                             <h3>Chapter I: Rumors and Departure</h3>
@@ -52,65 +51,12 @@
                                 <p>Snippets of literature in the world of the novel. Skip ahead or click ‘Details’ to read.</p>
                                 <summary>
                                     <details>
-                                        <p>
-                                            […]&ensp;You asked me can you join me<br>
-                                            on a walk at home, could I please?<br>
-                                            you had word you would share<br>
-                                            By the glade of cherry trees, I said<br>
-                                            I will meet you there.
-                                        </p>
-                                        <p>
-                                            Wondering in fear, as I too often do,<br>
-                                            what news you&#8217;d say that afternoon<br>
-                                            What happening so hurt your conscience,<br>
-                                            come up among us since<br>
-                                            a spring and summer of innocence<br>
-                                            the inflorescent hours we spent<br>
-                                            that came and went<br>
-                                            in the copse of blooming cherry trees,<br>
-                                            the one with the baby saplings<br>
-                                            growing in their nurseries.<br>
-                                            In the orchard where<br>
-                                            you and I would meet,<br>
-                                            the shadows upon your face<br>
-                                            were no longer those<br>
-                                            cast by the cherry trees.<br>
-                                            The curves of your cheek<br>
-                                            held a new dark, which,<br>
-                                            though infant then, I think<br>
-                                            I knew it would never leave.<br>
-                                        </p>
-                                        <p>
-                                            Then you told me what<br>
-                                            you had to say<br>
-                                            the love you felt<br>
-                                            had flown away.<br>
-                                            As quickly as it came,<br>
-                                            after our vernal waste,<br>
-                                            then a joyous summer space<br>
-                                            which, as I ruminate<br>
-                                            had memories so fragile that<br>
-                                            a touch and they’d disintegrate.<br>
-                                            That floated until summer was late<br>
-                                            sometime in the canicular days.
-                                        </p>
-                                        <p>
-                                            Which had only just begun to flower<br>
-                                            mind, intrigue and apprehension beckoned&ensp;[…]
-                                        </p>
-                                        <ul class="allusion-list">
-                                            <li>Vimíçitus¹</li>
-                                            <li>“When It Was the End of Summer”</li>
-                                            <li><em>Remembrances from Youth in Ellabeth</em></li>
-                                            <li>(1) **Poet; maxiprinex soloway period; member of yuve·shewe movement</li>
-                                        </ul>
-                                        <span class="fleuron">☙</span>
                                         <p>So long as man has walked the earth, another has plotted to kill him. To end war is to end men.</p>
                                         <ul class="allusion-list">
                                             <li>Sínitas</li>
                                             <li><em>Collected Sayings</em></li>
                                         </ul>
-                                        <span class="fleuron">☙</span>
+                                        <span class="fleuron">𐫱 𐫱 𐫱 𐫱 𐫱</span>
                                         <p>I tell will you now, here at the outset, that to lash other men with sword and spear, to set upon his works, his works with fire and to spill the blood of his family upon his own fields, is the great sin of all people in this fallen world.
                                             The prospect we might abandon this evil appears too far away to grasp, but it is not. We can capture it if we but reach a little farther—if we want to have peace, we can.</p>
                                         <ul class="allusion-list">
@@ -119,6 +65,7 @@
                                             <li>(2) ‘Against War Upon Lyseklesta’; Address 1 of 3.</li>
                                             <li>Addresses to the IV·Tandrat by its Members</li>
                                         </ul>
+                                        <span class="fleuron">𐫱 𐫱 𐫱 𐫱 𐫱</span>
                                     </details>
                                 </summary>
                             </aside>
@@ -301,6 +248,7 @@
                                 <p class="stanza prose">A bow for you is not an armament. It’s a hazard to your own health. It’s actually safer to leave it here. Bad an eye as I have, which is an argument, not a fact, it weighs so little and you need a bow and arrow. You also don’t have any arrows. That was true. I need to get better at making them. Cas said he’d seen straighter horse shoes. Well, I agree with him for once then.</p>
                             </section>
                             <div class="top">
+                                <small class="inter"><a href="chapter02.html">Chapter 2: The Duel in the Forest &rarr;</a></small><br>
                                 <small class="inter"><a href="#PoetryToc">Top &uarr;</a></small>
                             </div>
                         </section>
@@ -326,23 +274,23 @@
     <script type="text/javascript">
     displayCurrentYear();
     document.addEventListener("DOMContentLoaded", () => {
-    let wordCount = 0;
+        let wordCount = 0;
 
-    const chapterSections = document.querySelectorAll("section.chapter");
-    chapterSections.forEach(section => {
-        const paragraphs = section.querySelectorAll("p");
-        paragraphs.forEach(p => {
-            wordCount += p.textContent.split(/\s+/).filter(word => word.trim().length > 0).length;
+        const chapterSections = document.querySelectorAll("section.chapter");
+        chapterSections.forEach(section => {
+            const paragraphs = section.querySelectorAll("p");
+            paragraphs.forEach(p => {
+                wordCount += p.textContent.split(/\s+/).filter(word => word.trim().length > 0).length;
+            });
         });
-    });
 
-    const wordCountSpan = document.getElementById("wordCount");
-    if (wordCountSpan) {
-        wordCountSpan.textContent = wordCount.toLocaleString(); // Adds comma separators
-    } else {
-        console.error("Span with id 'wordCount' not found.");
-    }
-});
+        const wordCountSpan = document.getElementById("wordCount");
+        if (wordCountSpan) {
+            wordCountSpan.textContent = wordCount.toLocaleString(); // Adds comma separators
+        } else {
+            console.error("Span with id 'wordCount' not found.");
+        }
+    });
     </script>
 </body>
 

@@ -1271,3 +1271,7 @@ ul.introduction.novel li {
 .my4 {
     margin: 4rem 0;
 }
+
+.lh-copy {
+    line-height: 1.5;
+}

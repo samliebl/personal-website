@@ -70,7 +70,6 @@
                     <p>My music is on all major streaming platforms</p>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0mqyEQBBiBdvUuaPm7uGof?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
-
                 <div class="mt1 measure">
                     <p>This website is called “personal website” in my notes. There’s a reason ‘personal’ comes first.</p>
                     <p>All thoughts, opinions and anything expressed whatsoever are mine and mine alone. That goes double for any creative things, like poems. Anything on this site in no way represents any kind of position or endorsement of other parties, including, but not limited to, employers and clients.</p>
@@ -96,6 +95,23 @@
     <script type="text/javascript">
     displayCurrentYear();
     </script>
+    <script>
+    fetch('https://your-substack-name.substack.com/feed')
+        .then(response => response.text())
+        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+        .then(data => {
+            const items = data.querySelectorAll("item");
+            let html = "<ul>";
+            items.forEach(el => {
+                const title = el.querySelector("title").textContent;
+                const link = el.querySelector("link").textContent;
+                html += `<li><a href="${link}" target="_blank">${title}</a></li>`;
+            });
+            html += "</ul>";
+            document.getElementById("rss-feed").innerHTML = html;
+        });
+    </script>
+    <div id="rss-feed">Loading...</div>
 </body>
 
 </html>

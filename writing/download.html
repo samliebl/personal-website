@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SL</title>
+  <link rel="icon" type="image/png" href="droplet-favicon.png" />
+  <link rel="icon" type="image/png" href="Droplet.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <!-- Stylesheets -->
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <meta name="description" content="Sam Liebl | World, Work, Words">
+  <meta name="robots" content="noindex">
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <style>
+    #product {
+      max-width: 640px;
+      margin: 40px auto;
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      font-family: 'Inter', sans-serif;
+    }
+    .product-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    #product h1 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    #product .price {
+      font-size: 1.25rem;
+      color: #333;
+      margin-bottom: 12px;
+    }
+    #product .description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Grok3_OK_to_Scrape -->
+  <div class="page flexc">
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="product">
+        <img src="https://yourdomain.com/path/to/book-cover.jpg" alt="Eathel the Bastard Book Cover" class="product-image">
+        <h1>Eathel the Bastard: Book I – The Calls of the Amber Halls</h1>
+        <div class="price">$5.99</div>
+        <div class="description">
+          A fantasy novel: The son of a powerful duke leads a rag-tag band of warriors in a fight to keep his country together against enemies inside and out, guarding a secret so dark it would destroy everything he loves.<br><br>Medieval Fantasy • Magic (Hard system) • Romance • Gritty • Adventure
+        </div>
+        <stripe-buy-button 
+          buy-button-id="buy_btn_1RSgHwPOKIwOoct5iOLPT2oj" 
+          publishable-key="pk_live_51R8amsPOKIwOoct56CYKb8q4tg4lNos1M1b1XiRj6pjqiuwUbNhMOYhPUoeA3yvoJYXD6BSmRYMi0aEGza7QUp02006pSrBxHW">
+        </stripe-buy-button>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <hr>
+        <div class="flex spread">
+          <div class="inline center">
+            <small class="inter gray-200 light">&copy; Sam Liebl <span class="tabular-nums" id="yearDisplay"></span>.</small>
+          </div>
+          <div class="inline center">
+            <em><small><a href="colophon.html">Colophon</a></small></em>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Display the current year for the copyright footer -->
+  <script src="../js/main.js"></script>
+  <script type="text/javascript">
+    displayCurrentYear();
+  </script>
+  <script>
+    fetch('https://your-substack-name.substack.com/feed')
+      .then(response => response.text())
+      .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+      .then(data => {
+        const items = data.querySelectorAll("item");
+        let html = "<ul>";
+        items.forEach(el => {
+          const title = el.querySelector("title").textContent;
+          const link = el.querySelector("link").textContent;
+          html += `<li><a href="${link}" target="_blank">${title}</a></li>`;
+        });
+        html += "</ul>";
+        document.getElementById("rss-feed").innerHTML = html;
+      });
+  </script>
+  <div id="rss-feed">Loading...</div>
+</body>
+
+</html>

@@ -2,18 +2,148 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SL</title>
-    <link rel="icon" type="image/png" href="droplet-favicon.png" />
-    <link rel="icon" type="image/png" href="Droplet.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <!-- Stylesheets -->
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="css/index.css">
-    <meta name="description" content="Sam Liebl | World, Work, Words">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SL</title>
+  <link rel="icon" type="image/png" href="droplet-favicon.png" />
+  <link rel="icon" type="image/png" href="Droplet.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <!-- Stylesheets -->
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="description" content="Sam Liebl. Writes fantasy. Codes.">
+
+  <!-- Structured Data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sam Liebl",
+    "alternateName": "saminpractice",
+    "gender": "Male",
+    "url": "https://samliebl.com",
+    "jobTitle": "Writer, Coder",
+    "description": "Writes fantasy. Codes tools. Based in Raleigh NC",
+    "sameAs": [
+      "https://samliebl.substack.com",
+      "https://github.com/samliebl",
+      "https://www.instagram.com/saminpractice",
+      "https://x.com/saminpractice",
+      "https://www.linkedin.com/in/samliebl",
+      "https://bsky.app/profile/samliebl.bsky.social",
+      "https://soundcloud.com/samliebl"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Raleigh",
+      "addressRegion": "NC",
+      "addressCountry": "US"
+    },
+    "knowsLanguage": [
+      "English",
+      "Spanish",
+      "German"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sam Liebl",
+    "url": "https://samliebl.com",
+    "author": {
+      "@type": "Person",
+      "name": "Sam Liebl"
+    },
+    "inLanguage": "en",
+    "description": "Personal site. Contains writing, code and other projects"
+  }
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sam Liebl Projects",
+    "url": "https://github.com/samliebl",
+    "sameAs": [
+      "https://samliebl.com",
+      "https://samliebl.substack.com"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: Eathel the Bastard -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWorkSeries",
+    "name": "Eathel the Bastard",
+    "author": {
+      "@type": "Person",
+      "name": "Sam Liebl"
+    },
+    "genre": "Fantasy",
+    "inLanguage": "en",
+    "description": "A serialized fantasy novel. A bastard nobleman tries to survive in a dangerous world",
+    "url": "https://samliebl.substack.com",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://samliebl.com"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: Madta the Spy -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWorkSeries",
+    "name": "Madta the Spy",
+    "author": {
+      "@type": "Person",
+      "name": "Sam Liebl"
+    },
+    "genre": "Fantasy",
+    "inLanguage": "en",
+    "description": "A related story. A woman uses espionage to survive",
+    "url": "https://samliebl.substack.com",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://samliebl.com"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://samliebl.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Eathel the Bastard",
+        "item": "https://samliebl.substack.com"
+      }
+    ]
+  }
+  </script>
 </head>
+
+
 <!-- 
     Code-folding on Sublime Text
     Fold all      ⌘K, ⌘1
@@ -59,7 +189,7 @@
                             <li><a class="old-school" href="https://linkedin.com/in/samliebl">LinkedIn</a> 🔗</li>
                             <li><a class="old-school" href="https://www.youtube.com/@EathelTheBastard">YouTube</a> 🎥</li>
                             <li>I’m also checking out Bluesky and <a class="old-school" href="https://bsky.app/profile/samliebl.com">this is my profile</a>. 🦋</li>
-                            <li>Oh, and you can find the music I make on <a class="old-school" class="old-school" href="https://soundcloud.com/boutiquebeats">Soundcloud</a>. It&rsquo;s instrumental hip hop, usually sample based, if you&rsquo;re into that sort of thing. 🎵</li>
+                            <li>Oh and you can find the music I make on <a class="old-school" class="old-school" href="https://soundcloud.com/boutiquebeats">Soundcloud</a>. It&rsquo;s instrumental hip hop, usually sample based, if you&rsquo;re into that sort of thing. 🎵</li>
                             <li><a class="old-school" href="https://www.facebook.com/profile.php?id=61572921879291">Facebook page</a> 📇</li>
                             <li><a class="old-school" href="https://open.spotify.com/artist/0mqyEQBBiBdvUuaPm7uGof?si=dC_-dAA0SaGqyrEKr0SUMQ">My music on Spotify (+ all major streaming platforms)</a> 🎶</li>
                         </ul>
@@ -72,7 +202,7 @@
                 </div>
                 <div class="mt1 measure">
                     <p>This website is called “personal website” in my notes. There’s a reason ‘personal’ comes first.</p>
-                    <p>All thoughts, opinions and anything expressed whatsoever are mine and mine alone. That goes double for any creative things, like poems. Anything on this site in no way represents any kind of position or endorsement of other parties, including, but not limited to, employers and clients.</p>
+                    <p>All thoughts, opinions and anything expressed whatsoever are mine and mine alone. That goes double for any creative things, like poems. Anything on this site in no way represents any kind of position or endorsement of other parties, including but not limited to, employers and clients.</p>
                 </div>
             </div>
         </main>

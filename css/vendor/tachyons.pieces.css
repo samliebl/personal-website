@@ -77,6 +77,14 @@
   padding-bottom: 100%;
 }
 
+.aspect-ratio--4x5 {
+  padding-bottom: 80%;
+}
+
+.aspect-ratio--5x4 {
+  padding-bottom: 100%;
+}
+
 .aspect-ratio--object {
   position: absolute;
   top: 0;
@@ -142,7 +150,15 @@
     height: 100%;
     z-index: 100;
   }
+.aspect-ratio--4x5-ns {
+  padding-bottom: 80%;
 }
+
+.aspect-ratio--5x4-ns {
+  padding-bottom: 100%;
+}
+}
+
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .aspect-ratio-m {
     height: 0;
@@ -197,6 +213,13 @@
     height: 100%;
     z-index: 100;
   }
+  .aspect-ratio--4x5-m {
+  padding-bottom: 80%;
+}
+
+.aspect-ratio--5x4-m {
+  padding-bottom: 100%;
+}
 }
 @media screen and (min-width: 60em) {
   .aspect-ratio-l {
@@ -252,6 +275,13 @@
     height: 100%;
     z-index: 100;
   }
+  .aspect-ratio--4x5-l {
+  padding-bottom: 80%;
+}
+
+.aspect-ratio--5x4-l {
+  padding-bottom: 100%;
+}
 }
 /*
 

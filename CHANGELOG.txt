@@ -114,3 +114,6 @@ Added in some poem count metrics for Young
   Kimberly Johnson. The note on `work/work.html` now names them and says the
   titles, names and writing are their authors', and only the cover treatments
   are mine.
+- Added alt text to the fourteen book-cover images on `work/work.html`, which
+  had none. Text is derived from each filename, so `WritePublishRepeat.png`
+  becomes "Book cover: Write Publish Repeat".

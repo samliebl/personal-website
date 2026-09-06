@@ -25,8 +25,14 @@ and Perl). Those are the property of their respective owners, several are
 registered trademarks, and they are shown only to identify the tools used.
 No affiliation or endorsement is implied, and no ownership is claimed.
 
-Where the portfolio on work/work.html shows logos designed for clients, the
-design work is Sam Liebl's; the marks themselves belong to those clients.
+Most of the portfolio on work/work.html is self-initiated: the companies,
+brands, book titles and authors shown there are invented, made as design
+exercises rather than for real clients. Those logos and book covers are
+wholly Sam Liebl's and are reserved under the terms above.
+
+Three pieces are for real organisations: the Feline Foundation of Greater
+Washington, CCE, and Imagemin. The design work on those is Sam Liebl's; the
+marks themselves belong to those organisations.
 
 See README.md for the full statement.
 

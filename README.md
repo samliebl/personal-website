@@ -194,10 +194,16 @@ reproduced to identify the tools I use, and their presence implies no
 affiliation with or endorsement by those owners. Several are registered
 trademarks.
 
-Some of the portfolio pieces on `work/work.html` are logos and identities I
-designed for clients. The design work is mine, but the marks themselves
-belong to the clients they were made for, and naming them here is not a
-claim on those marks.
+Most of the portfolio on `work/work.html` is self-initiated. The companies,
+brands, book titles and authors are invented, made as design exercises
+rather than for real clients, so those logos and book covers are wholly mine
+and fall under the reserved terms above. Any resemblance to a real
+organisation or publication is unintended.
+
+Three pieces are for real organisations &mdash; the Feline Foundation of
+Greater Washington, CCE, and Imagemin. The design work on those is mine; the
+marks themselves belong to those organisations, and showing them here is not
+a claim on them.
 
 Two files sit in `css/vendor/` but are my own work rather than anyone
 else&rsquo;s, and fall under the MIT terms above with the rest of the code:

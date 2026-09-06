@@ -100,3 +100,10 @@ Added in some poem count metrics for Young
   `css/vendor/`, since `classes.css` and `novel.css` in that folder are my
   own. Noted that client logos in the portfolio are my design work but the
   clients' marks.
+- Corrected what the portfolio claims. Most of the logos and all the book
+  covers on `work/work.html` are for invented companies, titles and authors,
+  made as design exercises, so they are wholly mine; the earlier wording had
+  implied clients owned them. Only the Feline Foundation of Greater
+  Washington, CCE and Imagemin are real organisations. Added a note at the
+  top of the page saying which is which, so nobody reads the invented brands
+  as real client work.

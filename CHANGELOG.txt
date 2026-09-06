@@ -121,3 +121,9 @@ Added in some poem count metrics for Young
   comma before a conjunction where the sentence reads fine without one, and
   American spellings throughout ("license", "organization"). Left the poems
   and the vendor stylesheets alone.
+- Closed off the resume while it's out of date. `work/resume.html` is now in
+  .gitignore and untracked, so it goes off the public site on the next
+  deploy and out of the repo's current tree. Dropped it from sitemap.xml and
+  from the README. The two references to it, on index.html and
+  work/skills.html, are now muted gray spans with a title tooltip saying the
+  page is being updated, rather than links that would 404.

@@ -43,7 +43,6 @@ The small amount of JavaScript lives in `js/main.js` and is loaded by every page
 |  |- main.js
 |
 |- work/
-|  |- resume.html
 |  |- skills.html
 |  |- work.html
 |
@@ -81,7 +80,7 @@ This site contains content in the forms of a) **writing**, b) **portfolio items*
 
 1. Writing &rarr; `writing/*`
 1. Portfolio items &rarr; `work/work.html`
-1. Professional information &rarr;  `work/skills.html`, `work/resume.html`
+1. Professional information &rarr;  `work/skills.html`
 
 Within `writing/`, the poetry collections are `poems.html` (Someone),
 `stranger.html` and `young.html`. The novel, *Eathel the Bastard*, is in
@@ -117,7 +116,7 @@ Location(s): `writing/*`
 
 Things I've done and what I've learned
 
-Location(s): `work/skills.html`, `work/work.html`, `work/resume.html`
+Location(s): `work/skills.html`, `work/work.html`
 
 ---
 

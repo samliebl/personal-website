@@ -4,3 +4,6 @@ test/
 bs-config.js
 poems/more
 _*.html
+
+# Out of date, kept out of the repo and off the site for now
+work/resume.html

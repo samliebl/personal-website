@@ -127,3 +127,7 @@ Added in some poem count metrics for Young
   from the README. The two references to it, on index.html and
   work/skills.html, are now muted gray spans with a title tooltip saying the
   page is being updated, rather than links that would 404.
+- Removed the remaining copy about the resume rather than muting it: the
+  sentence on index.html and the "See also" line on work/skills.html are
+  gone. No text on the site refers to it now. History is left alone; the page
+  was accurate when it was written.

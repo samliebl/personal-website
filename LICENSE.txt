@@ -3,14 +3,14 @@ SCOPE OF THIS LICENSE
 This MIT license covers the CODE in this repository only: the HTML structure
 and page scaffolding, css/index.css, css/user.css and js/main.js.
 
-It does NOT cover the creative work. All writing (poems, the novel, and other
+It does NOT cover the creative work. All writing (poems, the novel and other
 prose and page copy) and all design and graphics by Sam Liebl (logos,
 illustrations, mockups, the image files at the top level of the repository,
 and artwork embedded in pages as inline SVG) are (c) Sam Liebl, all rights
-reserved, and may not be used or reproduced without permission.
+reserved. It may not be used or reproduced without permission.
 
 Third-party material is under its own terms and is NOT licensed here. This
-includes, and each keeps its own notice in the file:
+includes the following, each of which keeps its own notice in the file:
 
   - css/vendor/normalize.css     Nicolas Gallagher, Jonathan Neal et al., MIT
   - css/vendor/style.css         HTML5 Boilerplate, MIT
@@ -21,9 +21,9 @@ It also includes the technology logos reproduced on work/skills.html
 (Nunjucks, Sketch, Tachyons, GitHub, Sass, jQuery, Gulp, HTML5 Boilerplate,
 Browsersync, Furtive, Adobe Creative Suite, Bash, CSS, git, JSON, Node.js,
 3CX, CentOS, Debian, FreeSWITCH, Google Workspace, Ubuntu, Asterisk, VS Code
-and Perl). Those are the property of their respective owners, several are
-registered trademarks, and they are shown only to identify the tools used.
-No affiliation or endorsement is implied, and no ownership is claimed.
+and Perl). Those are the property of their respective owners and several are
+registered trademarks. They are shown only to identify the tools used.
+No affiliation or endorsement is implied. No ownership is claimed.
 
 Most of the portfolio on work/work.html is self-initiated: the companies,
 brands, book titles and authors shown there are invented, made as design
@@ -31,10 +31,10 @@ exercises rather than for real clients. Those logos and book covers are
 wholly Sam Liebl's and are reserved under the terms above.
 
 Some are real. The Feline Foundation of Greater Washington, Conservatives for
-Clean Energy, and Imagemin are real organisations: the design work shown is
-Sam Liebl's, but the marks belong to them. Two of the book covers are for
-real books rather than invented titles -- "Write. Publish. Repeat." by Sean
-Platt and Johnny B. Truant, and a cover crediting Kimberly Johnson. Those
+Clean Energy and Imagemin are real organizations: the design work shown is
+Sam Liebl's but the marks belong to them. Two of the book covers are for
+real books rather than invented titles. One is "Write. Publish. Repeat." by
+Sean Platt and Johnny B. Truant; the other credits Kimberly Johnson. Those
 titles, names and the writing behind them belong to their authors; only the
 cover treatments are Sam Liebl's.
 

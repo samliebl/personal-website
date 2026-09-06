@@ -54,10 +54,10 @@ Added in some poem count metrics for Young
   `writing/download-success.html`. The success page handed the paid PDF URL
   to anyone who loaded it directly.
 - Rewrote `robots.txt`. The old file was a lone `Disallow: /download.html`
-  with no `User-agent` line, and it named the wrong path anyway. Now allows
+  with no `User-agent` line and it named the wrong path anyway. Now allows
   everything and points at the sitemap.
 - Rm the Substack RSS block from `index.html`. It fetched the placeholder
-  host `your-substack-name.substack.com`, so it never resolved, and its
+  host `your-substack-name.substack.com`, so it never resolved and its
   target div sat outside `.page`, after `</footer>`.
 - Fixed colophon links on all eight pages in `writing/novel/`--they pointed
   at `../colophon.html`, one level short.
@@ -77,12 +77,12 @@ Added in some poem count metrics for Young
   heading above it. Kept the Substack embed.
 - Rm the `<!-- Grok3_OK_to_Scrape -->` comment.
 - Rm social profile metadata from the JSON-LD: the `sameAs` array and the
-  `alternateName` handle on the Person block, and the whole Organization
+  `alternateName` handle on the Person block and the whole Organization
   block, which existed to point at the GitHub profile.
 - Updated README: corrected the directory tree, which still listed `poems/`
   and an `about.html` that no longer exist, documented `js/main.js`, and
-  pointed the licence carve-out at `writing` instead of the gone `poems`.
-- Rm the poems to-do list from README, and the now-empty Notes section.
+  pointed the license carve-out at `writing` instead of the gone `poems`.
+- Rm the poems to-do list from README and the now-empty Notes section.
 - Restated licensing by kind rather than by directory, in both README and
   LICENSE.txt. The directory rule had holes both ways: the logo and icon
   files sit at the top level, so they fell under MIT, while `css/vendor/`
@@ -104,16 +104,20 @@ Added in some poem count metrics for Young
   covers on `work/work.html` are for invented companies, titles and authors,
   made as design exercises, so they are wholly mine; the earlier wording had
   implied clients owned them. Only the Feline Foundation of Greater
-  Washington, CCE and Imagemin are real organisations. Added a note at the
+  Washington, CCE and Imagemin are real organizations. Added a note at the
   top of the page saying which is which, so nobody reads the invented brands
   as real client work.
 - Credited the real work in the portfolio instead of lumping it with the
   mockups. CCE is Conservatives for Clean Energy, now spelled out. Two of the
   fourteen book covers are for real books, not invented titles: "Write.
-  Publish. Repeat." by Sean Platt and Johnny B. Truant, and a cover crediting
+  Publish. Repeat." by Sean Platt and Johnny B. Truant, plus a cover crediting
   Kimberly Johnson. The note on `work/work.html` now names them and says the
-  titles, names and writing are their authors', and only the cover treatments
+  titles, names and writing are their authors' and only the cover treatments
   are mine.
 - Added alt text to the fourteen book-cover images on `work/work.html`, which
   had none. Text is derived from each filename, so `WritePublishRepeat.png`
   becomes "Book cover: Write Publish Repeat".
+- Copyedited everything I added to match house style: no Oxford commas, no
+  comma before a conjunction where the sentence reads fine without one, and
+  American spellings throughout ("license", "organization"). Left the poems
+  and the vendor stylesheets alone.

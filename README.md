@@ -18,7 +18,7 @@ My website. [Located here](https://samliebl.com/).
 
 It&rsquo;s just basic HTML and CSS. There is no build step: the pages are written by hand and served as-is.
 
-The small amount of JavaScript lives in `js/main.js` and is loaded by every page. It displays the current year in the footer, counts the poems on a collection page, and counts the words in a novel chapter. Each function looks for its own target element (`#yearDisplay`, `#poemCount`, `#wordCount`) and does nothing on pages that don&rsquo;t have one, so pages need no inline script of their own.
+The small amount of JavaScript lives in `js/main.js` and is loaded by every page. It displays the current year in the footer, counts the poems on a collection page and counts the words in a novel chapter. Each function looks for its own target element (`#yearDisplay`, `#poemCount`, `#wordCount`) and does nothing on pages that don&rsquo;t have one, so pages need no inline script of their own.
 
 <!-- Site Content -->
 
@@ -86,7 +86,7 @@ This site contains content in the forms of a) **writing**, b) **portfolio items*
 Within `writing/`, the poetry collections are `poems.html` (Someone),
 `stranger.html` and `young.html`. The novel, *Eathel the Bastard*, is in
 `writing/novel/`, with `index.html` as its table of contents, one file per
-chapter, and `lore.html` for supporting material.
+chapter and `lore.html` for supporting material.
 
 <!-- Poems (Writing) -->
 
@@ -167,7 +167,7 @@ structure and page scaffolding, `css/index.css`, `css/user.css` and
 used or reproduced without permission, wherever it appears in this
 repository. This covers:
 
-- **Writing** &mdash; the poems, the novel, and all other prose and page
+- **Writing** &mdash; the poems, the novel and all other prose and page
   copy. Most of it is under `writing/`, but this applies to the words on
   every page, not just that directory.
 - **Design and graphics I made** &mdash; logos, illustrations, mockups and
@@ -190,29 +190,29 @@ Sketch, Tachyons, GitHub, Sass, jQuery, Gulp, HTML5 Boilerplate,
 Browsersync, Furtive, Adobe Creative Suite, Bash, CSS, git, JSON, Node.js,
 3CX, CentOS, Debian, FreeSWITCH, Google Workspace, Ubuntu, Asterisk, VS Code
 and Perl &mdash; are each the property of their respective owners. They are
-reproduced to identify the tools I use, and their presence implies no
+reproduced to identify the tools I use. Their presence implies no
 affiliation with or endorsement by those owners. Several are registered
 trademarks.
 
 Most of the portfolio on `work/work.html` is self-initiated. The companies,
 brands, book titles and authors are invented, made as design exercises
-rather than for real clients, so those logos and book covers are wholly mine
+rather than for real clients. Those logos and book covers are wholly mine
 and fall under the reserved terms above. Any resemblance to a real
-organisation or publication is unintended.
+organization or publication is unintended.
 
-Some are real, and the credit belongs elsewhere. The Feline Foundation of
+Some are real and the credit belongs elsewhere. The Feline Foundation of
 Greater Washington, Conservatives for Clean Energy and
-[Imagemin](https://github.com/imagemin/imagemin) are real organisations: the
-design work shown is mine, but the marks are theirs and showing them is not a
+[Imagemin](https://github.com/imagemin/imagemin) are real organizations: the
+design work shown is mine but the marks are theirs. Showing them is not a
 claim on them.
 
-Two of the book covers are for real books rather than invented titles:
-*Write. Publish. Repeat.* by Sean Platt and Johnny B. Truant, and a cover
-crediting Kimberly Johnson. The titles, the names and the writing behind them
+Two of the book covers are for real books rather than invented titles. One
+is *Write. Publish. Repeat.* by Sean Platt and Johnny B. Truant; the other
+credits Kimberly Johnson. The titles, the names and the writing behind them
 belong to their authors; only the cover treatments are mine.
 
 Two files sit in `css/vendor/` but are my own work rather than anyone
-else&rsquo;s, and fall under the MIT terms above with the rest of the code:
+else&rsquo;s. They fall under the MIT terms above with the rest of the code:
 `classes.css` (a generated spacing scale) and `novel.css`.
 
 See [Acknowledgments](#section_Acknowledgments) for the wider list of work

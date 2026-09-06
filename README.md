@@ -200,10 +200,16 @@ rather than for real clients, so those logos and book covers are wholly mine
 and fall under the reserved terms above. Any resemblance to a real
 organisation or publication is unintended.
 
-Three pieces are for real organisations &mdash; the Feline Foundation of
-Greater Washington, CCE, and Imagemin. The design work on those is mine; the
-marks themselves belong to those organisations, and showing them here is not
-a claim on them.
+Some are real, and the credit belongs elsewhere. The Feline Foundation of
+Greater Washington, Conservatives for Clean Energy and
+[Imagemin](https://github.com/imagemin/imagemin) are real organisations: the
+design work shown is mine, but the marks are theirs and showing them is not a
+claim on them.
+
+Two of the book covers are for real books rather than invented titles:
+*Write. Publish. Repeat.* by Sean Platt and Johnny B. Truant, and a cover
+crediting Kimberly Johnson. The titles, the names and the writing behind them
+belong to their authors; only the cover treatments are mine.
 
 Two files sit in `css/vendor/` but are my own work rather than anyone
 else&rsquo;s, and fall under the MIT terms above with the rest of the code:

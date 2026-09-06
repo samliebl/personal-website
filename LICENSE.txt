@@ -30,9 +30,13 @@ brands, book titles and authors shown there are invented, made as design
 exercises rather than for real clients. Those logos and book covers are
 wholly Sam Liebl's and are reserved under the terms above.
 
-Three pieces are for real organisations: the Feline Foundation of Greater
-Washington, CCE, and Imagemin. The design work on those is Sam Liebl's; the
-marks themselves belong to those organisations.
+Some are real. The Feline Foundation of Greater Washington, Conservatives for
+Clean Energy, and Imagemin are real organisations: the design work shown is
+Sam Liebl's, but the marks belong to them. Two of the book covers are for
+real books rather than invented titles -- "Write. Publish. Repeat." by Sean
+Platt and Johnny B. Truant, and a cover crediting Kimberly Johnson. Those
+titles, names and the writing behind them belong to their authors; only the
+cover treatments are Sam Liebl's.
 
 See README.md for the full statement.
 

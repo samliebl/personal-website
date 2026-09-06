@@ -107,3 +107,10 @@ Added in some poem count metrics for Young
   Washington, CCE and Imagemin are real organisations. Added a note at the
   top of the page saying which is which, so nobody reads the invented brands
   as real client work.
+- Credited the real work in the portfolio instead of lumping it with the
+  mockups. CCE is Conservatives for Clean Energy, now spelled out. Two of the
+  fourteen book covers are for real books, not invented titles: "Write.
+  Publish. Repeat." by Sean Platt and Johnny B. Truant, and a cover crediting
+  Kimberly Johnson. The note on `work/work.html` now names them and says the
+  titles, names and writing are their authors', and only the cover treatments
+  are mine.

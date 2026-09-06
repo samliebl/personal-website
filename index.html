@@ -163,6 +163,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="writing/poems.html">Writing</a></li>
                         <li><a href="work/skills.html">Skills</a></li>
+                        <li><a href="work/work.html">Work</a></li>
                         <li><a href="https://github.com/samliebl">GitHub</a></li>
                         <li><a href="https://soundcloud.com/boutiquebeats">I make music</a></li>
                     </ul>
@@ -226,23 +227,6 @@
     <script type="text/javascript">
     displayCurrentYear();
     </script>
-    <script>
-    fetch('https://your-substack-name.substack.com/feed')
-        .then(response => response.text())
-        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
-        .then(data => {
-            const items = data.querySelectorAll("item");
-            let html = "<ul>";
-            items.forEach(el => {
-                const title = el.querySelector("title").textContent;
-                const link = el.querySelector("link").textContent;
-                html += `<li><a href="${link}" target="_blank">${title}</a></li>`;
-            });
-            html += "</ul>";
-            document.getElementById("rss-feed").innerHTML = html;
-        });
-    </script>
-    <div id="rss-feed">Loading...</div>
 </body>
 
 </html>

@@ -13,20 +13,55 @@ function displayCurrentYear() {
     document.getElementById('yearDisplay').innerText = currentYear;
 }
 
+// Count the poems on a collection page and show the total.
+// Pages without a #poemCount element simply don't display a count.
+
 function countPoems() {
-    // Count the number of elements with the class 'poem'
-    const poemElements = document.querySelectorAll('.poem').length;
-
-    // Print the number to the console
-    console.log('Number of poem elements:', poemElements);
-
-    // Write the number to the span with ID 'poemCount'
-    const poemCountSpan = document.getElementById('poemCount');
-    if (poemCountSpan) {
-        poemCountSpan.innerText = poemElements;
-    } else {
-        console.error('Span element with id "poemCount" not found');
+    var target = document.getElementById('poemCount');
+    if (!target) {
+        return 0;
     }
+
+    var count = document.querySelectorAll('.poem').length;
+    target.textContent = count.toLocaleString();
+    return count;
+}
+
+// Run automatically wherever a #poemCount element is present, so pages
+// don't each need their own inline call.
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', countPoems);
+} else {
+    countPoems();
+}
+
+
+// Count the words in a novel chapter and show the total.
+// Pages without a #wordCount element simply don't display a count.
+
+function countWords() {
+    var target = document.getElementById('wordCount');
+    if (!target) {
+        return 0;
+    }
+
+    var total = 0;
+    document.querySelectorAll('section.chapter p').forEach(function (p) {
+        total += p.textContent.split(/\s+/).filter(function (word) {
+            return word.trim().length > 0;
+        }).length;
+    });
+
+    target.textContent = total.toLocaleString();
+    return total;
+}
+
+// Run automatically wherever a #wordCount element is present, so chapters
+// don't each need their own inline copy of this.
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', countWords);
+} else {
+    countWords();
 }
 
 

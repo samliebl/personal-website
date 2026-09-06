@@ -28,7 +28,12 @@
             <div class="container">
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../writing/poems.html">Writing</a></li>
+                        <li><a href="../../work/skills.html">Skills</a></li>
+                        <li><a href="../../work/work.html">Work</a></li>
+                        <li><a href="https://github.com/samliebl">GitHub</a></li>
+                        <li><a href="https://soundcloud.com/boutiquebeats">I make music</a></li>
                     </ul>
                 </nav>
             </div>
@@ -263,7 +268,7 @@
                         <small class="inter gray-200 light">&copy; Sam Liebl <span class="tabular-nums" id="yearDisplay"></span>.</small>
                     </div>
                     <div class="inline center">
-                        <em><small><a href="../colophon.html">Colophon</a></small></em>
+                        <em><small><a href="../../colophon.html">Colophon</a></small></em>
                     </div>
                 </div>
             </div>
@@ -273,24 +278,6 @@
     <script src="../../js/main.js"></script>
     <script type="text/javascript">
     displayCurrentYear();
-    document.addEventListener("DOMContentLoaded", () => {
-        let wordCount = 0;
-
-        const chapterSections = document.querySelectorAll("section.chapter");
-        chapterSections.forEach(section => {
-            const paragraphs = section.querySelectorAll("p");
-            paragraphs.forEach(p => {
-                wordCount += p.textContent.split(/\s+/).filter(word => word.trim().length > 0).length;
-            });
-        });
-
-        const wordCountSpan = document.getElementById("wordCount");
-        if (wordCountSpan) {
-            wordCountSpan.textContent = wordCount.toLocaleString(); // Adds comma separators
-        } else {
-            console.error("Span with id 'wordCount' not found.");
-        }
-    });
     </script>
 </body>
 

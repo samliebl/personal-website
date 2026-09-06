@@ -18,7 +18,9 @@ My website. [Located here](https://samliebl.com/).
 
 <h2 id="section_Construction">Construction</h2>
 
-It&rsquo;s just basic HTML and CSS. There is some JavaScript in a footer so that the current year always displays.
+It&rsquo;s just basic HTML and CSS. There is no build step: the pages are written by hand and served as-is.
+
+The small amount of JavaScript lives in `js/main.js` and is loaded by every page. It displays the current year in the footer, counts the poems on a collection page, and counts the words in a novel chapter. Each function looks for its own target element (`#yearDisplay`, `#poemCount`, `#wordCount`) and does nothing on pages that don&rsquo;t have one, so pages need no inline script of their own.
 
 <!-- Site Content -->
 
@@ -29,36 +31,64 @@ It&rsquo;s just basic HTML and CSS. There is some JavaScript in a footer so that
 ```
 .
 |- css/
-   |- vendor/
-   |  |- normalize.css
-   |  |- style.css
-   |  |- tachyons.pieces.css
-   |
-   |- index.css
-   |- user.css
- 
-|- js/
-   |- main.js
- 
-|- poems/
-   |- poems.html
-   |- stranger.html
-   |- young
- 
-|- work/
-   |- skills.html
-   |- work.html
+|  |- vendor/
+|  |  |- classes.css
+|  |  |- normalize.css
+|  |  |- novel.css
+|  |  |- style.css
+|  |  |- tachyons.pieces.css
+|  |
+|  |- index.css
+|  |- user.css
 |
-|- about.html
+|- js/
+|  |- main.js
+|
+|- work/
+|  |- resume.html
+|  |- skills.html
+|  |- work.html
+|
+|- writing/
+|  |- novel/
+|  |  |- index.html
+|  |  |- chapter01.html
+|  |  |- chapter02.html
+|  |  |- chapter03.html
+|  |  |- chapter04.html
+|  |  |- chapter05.html
+|  |  |- lore.html
+|  |  |- novel.html
+|  |
+|  |- poems.html
+|  |- stranger.html
+|  |- young.html
+|
 |- colophon.html
 |- index.html
+|
+|- CHANGELOG.txt
+|- LICENSE.txt
+|- README.md
+|- robots.txt
+|- sitemap.xml
+|
+|- Droplet.png
+|- droplet-favicon.png
+|- favicon.ico
+|- tile.png
 ```
 
 This site contains content in the forms of a) **writing**, b) **portfolio items** and c) **professional information**.
 
-1. Writing &rarr; `poems/*`
+1. Writing &rarr; `writing/*`
 1. Portfolio items &rarr; `work/work.html`
-1. Professional information &rarr;  `work/skills.html`
+1. Professional information &rarr;  `work/skills.html`, `work/resume.html`
+
+Within `writing/`, the poetry collections are `poems.html` (Someone),
+`stranger.html` and `young.html`. The novel, *Eathel the Bastard*, is in
+`writing/novel/`, with `index.html` as its table of contents, one file per
+chapter, and `lore.html` for supporting material.
 
 <!-- Poems (Writing) -->
 
@@ -115,18 +145,18 @@ Things I've made and designed. Logos, illustrations, mockups, etc.
 
 Things I've written
 
-Location(s): `poems/*`
+Location(s): `writing/*`
 
 <!-- Professional information -->
 
 <h3 id="section_ProfessionalInformation">Professional information</h3>
 
 
-<h4 id="section_Experience">Experience</h3>
+<h4 id="section_Experience">Experience</h4>
 
 Things I've done and what I've learned
 
-Location(s): `work/skills.html`, `work/work.html`
+Location(s): `work/skills.html`, `work/work.html`, `work/resume.html`
 
 ---
 
@@ -164,13 +194,13 @@ Selected dependencies and inspiration
 
 <h4 id="section_License">License</h4>
 
-Please consider everything *except for any and all content in `poems`, `work` directories*¹ available under the license (MIT) in project directory `./LICENSE.txt`.
+Please consider everything *except for any and all content in the `writing` and `work` directories*¹ available under the license (MIT) in project directory `./LICENSE.txt`.
 
 <!-- Notes -->
 
 <h4 id="section_Notes">Notes</h4>
 
-1. For content in `poems`, `work` directories:  
+1. For content in the `writing` and `work` directories:  
 &copy; Sam Liebl 2024. All rights reserved. This content may not be used or reproduced without permission.
 
 ---

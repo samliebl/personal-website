@@ -45,3 +45,40 @@ Added in some poem count metrics for Young
 - Update favicons/site icon assets.
 - Rm problematic SVGs from `work/skills.html`--need to figure out issue.
 - Updated formatting on CHANGELOG--doing max width 80 char.
+
+---
+
+2026-09-06
+
+- Rm Stripe download flow: deleted `writing/download.html` and
+  `writing/download-success.html`. The success page handed the paid PDF URL
+  to anyone who loaded it directly.
+- Rewrote `robots.txt`. The old file was a lone `Disallow: /download.html`
+  with no `User-agent` line, and it named the wrong path anyway. Now allows
+  everything and points at the sitemap.
+- Rm the Substack RSS block from `index.html`. It fetched the placeholder
+  host `your-substack-name.substack.com`, so it never resolved, and its
+  target div sat outside `.page`, after `</footer>`.
+- Fixed colophon links on all eight pages in `writing/novel/`--they pointed
+  at `../colophon.html`, one level short.
+- Chapter 6 is planned, not written, so it is no longer a link. Now matches
+  how Chapter 7 was already shown. No pages were deleted.
+- Unified the nav across all 16 pages. It had drifted into five variants;
+  'Home' pointed at four different places under `writing/novel/`, three of
+  them nonexistent. Every internal link on the site now resolves.
+- Moved the poem and word counters into `js/main.js`. The word counter had
+  been pasted inline into all eight novel pages, four of which have no
+  `#wordCount` element and logged an error on every load.
+- Fixed a double-count in the word counter. It summed each `section.chapter`
+  element's descendant paragraphs, so a nested chapter section was counted
+  twice. `chapter01.html` read 8,551; the true figure is 4,412.
+- Chapters 3 and 4 now display word counts, like the other chapters.
+- Rm the social links list from `index.html`, along with the 'Social links'
+  heading above it. Kept the Substack embed.
+- Rm the `<!-- Grok3_OK_to_Scrape -->` comment.
+- Rm social profile metadata from the JSON-LD: the `sameAs` array and the
+  `alternateName` handle on the Person block, and the whole Organization
+  block, which existed to point at the GitHub profile.
+- Updated README: corrected the directory tree, which still listed `poems/`
+  and an `about.html` that no longer exist, documented `js/main.js`, and
+  pointed the licence carve-out at `writing` instead of the gone `poems`.

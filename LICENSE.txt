@@ -9,9 +9,24 @@ illustrations, mockups, the image files at the top level of the repository,
 and artwork embedded in pages as inline SVG) are (c) Sam Liebl, all rights
 reserved, and may not be used or reproduced without permission.
 
-Third-party material is under its own terms and is not licensed here,
-including the stylesheets in css/vendor/ and the technology logos reproduced
-in work/skills.html.
+Third-party material is under its own terms and is NOT licensed here. This
+includes, and each keeps its own notice in the file:
+
+  - css/vendor/normalize.css     Nicolas Gallagher, Jonathan Neal et al., MIT
+  - css/vendor/style.css         HTML5 Boilerplate, MIT
+  - css/vendor/tachyons.pieces.css   Tachyons, (c) Adam Morse and John
+                                     Otander, MIT
+
+It also includes the technology logos reproduced on work/skills.html
+(Nunjucks, Sketch, Tachyons, GitHub, Sass, jQuery, Gulp, HTML5 Boilerplate,
+Browsersync, Furtive, Adobe Creative Suite, Bash, CSS, git, JSON, Node.js,
+3CX, CentOS, Debian, FreeSWITCH, Google Workspace, Ubuntu, Asterisk, VS Code
+and Perl). Those are the property of their respective owners, several are
+registered trademarks, and they are shown only to identify the tools used.
+No affiliation or endorsement is implied, and no ownership is claimed.
+
+Where the portfolio on work/work.html shows logos designed for clients, the
+design work is Sam Liebl's; the marks themselves belong to those clients.
 
 See README.md for the full statement.
 

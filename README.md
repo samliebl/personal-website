@@ -175,11 +175,36 @@ repository. This covers:
   `favicon.ico`, `tile.png`) and as artwork embedded directly in a page as
   inline SVG (`work/work.html`).
 
-**Third-party material is under its own terms and is not mine to license:**
-the stylesheets in `css/vendor/` (see
-[Acknowledgments](#section_Acknowledgments)) and the technology logos
-reproduced in `work/skills.html`, which remain the property of their
-respective owners.
+**Third-party material is under its own terms and is not mine to license.**
+Each of these carries its own copyright and license notice in the file
+itself:
+
+- `css/vendor/normalize.css` &mdash; Nicolas Gallagher, Jonathan Neal *et
+  al.*, MIT
+- `css/vendor/style.css` &mdash; HTML5 Boilerplate, MIT
+- `css/vendor/tachyons.pieces.css` &mdash; excerpted from Tachyons, &copy;
+  Adam Morse and John Otander, MIT
+
+The technology logos reproduced on `work/skills.html` &mdash; Nunjucks,
+Sketch, Tachyons, GitHub, Sass, jQuery, Gulp, HTML5 Boilerplate,
+Browsersync, Furtive, Adobe Creative Suite, Bash, CSS, git, JSON, Node.js,
+3CX, CentOS, Debian, FreeSWITCH, Google Workspace, Ubuntu, Asterisk, VS Code
+and Perl &mdash; are each the property of their respective owners. They are
+reproduced to identify the tools I use, and their presence implies no
+affiliation with or endorsement by those owners. Several are registered
+trademarks.
+
+Some of the portfolio pieces on `work/work.html` are logos and identities I
+designed for clients. The design work is mine, but the marks themselves
+belong to the clients they were made for, and naming them here is not a
+claim on those marks.
+
+Two files sit in `css/vendor/` but are my own work rather than anyone
+else&rsquo;s, and fall under the MIT terms above with the rest of the code:
+`classes.css` (a generated spacing scale) and `novel.css`.
+
+See [Acknowledgments](#section_Acknowledgments) for the wider list of work
+this site builds on.
 
 ---
 

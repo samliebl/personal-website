@@ -90,3 +90,13 @@ Added in some poem count metrics for Young
   were never mine to license. Code stays MIT; all writing and all design
   and graphics are reserved wherever they sit, so a future rename can't
   quietly change what applies.
+- Stopped the site and its license from purporting to own third-party work.
+  Added the missing Tachyons MIT notice to `css/vendor/tachyons.pieces.css`,
+  which had none. Added a note under the logo grid on `work/skills.html`
+  saying the 25 marks shown there (Nunjucks, Sass, GitHub, Adobe, Ubuntu and
+  the rest) are each their owner's property, shown to identify tools I use,
+  with no affiliation or endorsement implied. README and LICENSE.txt now
+  name the specific third-party files rather than disclaiming all of
+  `css/vendor/`, since `classes.css` and `novel.css` in that folder are my
+  own. Noted that client logos in the portfolio are my design work but the
+  clients' marks.

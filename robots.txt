@@ -1,1 +1,4 @@
-Disallow: /download.html
+User-agent: *
+Allow: /
+
+Sitemap: https://samliebl.com/sitemap.xml

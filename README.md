@@ -7,12 +7,10 @@ My website. [Located here](https://samliebl.com/).
 1. [Construction](#section_Construction)
 1. [Site Content](#section_SiteContent)
 	1. [Poems (Writing)](#section_Poems)
-		1. [Poems to-do list](#section_PoemsToDoList)
 	1. [Portfolio items](#section_PortfolioItems)
 	1. [Professional information](#section_ProfessionalInformation)
 1. [Acknowledgments](#section_Acknowledgments)
 1. [License](#section_License)
-1. [Notes](#section_Notes)
 
 <!-- Construction -->
 
@@ -94,44 +92,7 @@ chapter, and `lore.html` for supporting material.
 
 <h4 id="section_Poems">Poems</h4>
 
-I write poems and post them intermittently. These are the collections of them with to-do's to keep me organized.
-
-<h5 id="section_PoemsToDoList">Poems to-do list</h5>
-
-1. ~~**Young** (2010-2013)~~ ✓  
-1. **Stranger** (2015–2022)  
-	…*continuing to collect*…  
-	But I would capture something close  
-	Come to Asheville  
-	I liked me better when I was with you  
-	The Movements of the Planets  
-	The Words in Me  
-	~~When I Love You is in the Mornings~~ ✓  
-	~~Together, we were air~~ ✓  
-	~~There are all the girls~~ ✓  
-	You girls are like me  
-	Dearest,&ensp;J.&ensp;D.
-1. **Someone** (2024)  
-	~~Back when I Was Happy~~ ✓  
-	Beloved, K.&ensp;P.  
-	I am an Open Book  
-	I Know a Good Writer  
-	I Should Be Working  
-	I Think It Was Today (K.&ensp;B.)  
-	It Was Love, So We Ran Away  
-	Me Brand New  
-	Oh how unfortunate  
-	On the Occasion of Your Birth  
-	Wedding Vows  
-	Call Me ‘Baby’ When We’re Together  
-	**My Death** (1/5) and…  
-	&emsp;Funeral (2/5)  
-	&emsp;Judgement (3/5)  
-	&emsp;Going to Hell (4/5)  
-	&emsp;Going to Heaven (5/5)  
-	**Poems by**…  
-	&emsp;Women About Men (1/2)  
-	&emsp;Men About Women (2/2)
+I write poems and post them intermittently. The collections live in `writing/`.
 
 <!-- Portfolio items  -->
 
@@ -194,14 +155,31 @@ Selected dependencies and inspiration
 
 <h4 id="section_License">License</h4>
 
-Please consider everything *except for any and all content in the `writing` and `work` directories*¹ available under the license (MIT) in project directory `./LICENSE.txt`.
+Two different kinds of thing live in this repository and they are not under
+the same terms. The split below is by *kind* rather than by folder, so that
+moving or renaming a file doesn't change what applies to it.
 
-<!-- Notes -->
+**The code** is available under the MIT license in `./LICENSE.txt`: the HTML
+structure and page scaffolding, `css/index.css`, `css/user.css` and
+`js/main.js`.
 
-<h4 id="section_Notes">Notes</h4>
+**The creative work is &copy; Sam Liebl. All rights reserved.** It may not be
+used or reproduced without permission, wherever it appears in this
+repository. This covers:
 
-1. For content in the `writing` and `work` directories:  
-&copy; Sam Liebl 2024. All rights reserved. This content may not be used or reproduced without permission.
+- **Writing** &mdash; the poems, the novel, and all other prose and page
+  copy. Most of it is under `writing/`, but this applies to the words on
+  every page, not just that directory.
+- **Design and graphics I made** &mdash; logos, illustrations, mockups and
+  other artwork, both as image files (`Droplet.png`, `droplet-favicon.png`,
+  `favicon.ico`, `tile.png`) and as artwork embedded directly in a page as
+  inline SVG (`work/work.html`).
+
+**Third-party material is under its own terms and is not mine to license:**
+the stylesheets in `css/vendor/` (see
+[Acknowledgments](#section_Acknowledgments)) and the technology logos
+reproduced in `work/skills.html`, which remain the property of their
+respective owners.
 
 ---
 

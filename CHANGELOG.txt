@@ -82,3 +82,11 @@ Added in some poem count metrics for Young
 - Updated README: corrected the directory tree, which still listed `poems/`
   and an `about.html` that no longer exist, documented `js/main.js`, and
   pointed the licence carve-out at `writing` instead of the gone `poems`.
+- Rm the poems to-do list from README, and the now-empty Notes section.
+- Restated licensing by kind rather than by directory, in both README and
+  LICENSE.txt. The directory rule had holes both ways: the logo and icon
+  files sit at the top level, so they fell under MIT, while `css/vendor/`
+  and the technology logos in `work/skills.html` belong to other people and
+  were never mine to license. Code stays MIT; all writing and all design
+  and graphics are reserved wherever they sit, so a future rename can't
+  quietly change what applies.

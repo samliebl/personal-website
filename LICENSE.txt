@@ -1,3 +1,22 @@
+SCOPE OF THIS LICENSE
+
+This MIT license covers the CODE in this repository only: the HTML structure
+and page scaffolding, css/index.css, css/user.css and js/main.js.
+
+It does NOT cover the creative work. All writing (poems, the novel, and other
+prose and page copy) and all design and graphics by Sam Liebl (logos,
+illustrations, mockups, the image files at the top level of the repository,
+and artwork embedded in pages as inline SVG) are (c) Sam Liebl, all rights
+reserved, and may not be used or reproduced without permission.
+
+Third-party material is under its own terms and is not licensed here,
+including the stylesheets in css/vendor/ and the technology logos reproduced
+in work/skills.html.
+
+See README.md for the full statement.
+
+----------------------------------------------------------------------------
+
 Copyright 2024 Sam Liebl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

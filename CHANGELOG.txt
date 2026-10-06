@@ -131,3 +131,13 @@ Added in some poem count metrics for Young
   sentence on index.html and the "See also" line on work/skills.html are
   gone. No text on the site refers to it now. History is left alone; the page
   was accurate when it was written.
+
+---
+
+2026-10-06
+
+- Rm the Spotify embed from index.html along with its copy, "My music is on
+  all major streaming platforms" and the "This is me:" line that introduced
+  it. No longer relevant. Nothing else on the site referenced Spotify.
+- Reworded the app.samliebl.com link on work/skills.html. It had claimed a
+  "Working web app"; it now reads as a work in progress on API skills.

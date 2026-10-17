@@ -4,8 +4,7 @@
  *
  * It loads Umami's tracker (cookie-free, no personal data) and adds what the
  * tracker doesn't measure by itself: which links get followed, how far down a
- * page people read, which poems actually get read, how long a page holds
- * attention, and JavaScript errors.
+ * page people read, how long a page holds attention, and JavaScript errors.
  *
  * Switching on: fill in the website IDs below. An empty ID keeps analytics
  * off for that host.
@@ -39,8 +38,7 @@
     // Reading measurements.
     var DEPTH_STEPS = [25, 50, 75, 100];              // percent of the page scrolled
     var ENGAGED_STEPS = [15, 30, 60, 120, 300, 600];  // seconds of active reading
-    var POEM_DWELL = 5;        // seconds a poem sits mid-screen to count as read
-    var IDLE_AFTER = 60;       // seconds without input before the clock stops
+        var IDLE_AFTER = 60;       // seconds without input before the clock stops
     var MAX_ERRORS = 3;        // JavaScript errors reported per page view
 
     var OPT_OUT_KEY = 'sl-analytics-off';
@@ -61,8 +59,7 @@
     var engaged = 0;
     var errorCount = 0;
     var depthSeen = {};
-    var poems = [];
-
+    
     /* ------------------------------------------------------------------
        Helpers
        ------------------------------------------------------------------ */
@@ -218,36 +215,8 @@
         });
     }
 
-    // Poems: which ones actually get read. A poem counts once it has sat across
-    // the middle of the screen for POEM_DWELL seconds of active reading. The
-    // band is thin so one long poem and a run of short ones are both measured
-    // fairly.
-    function watchPoems() {
-        var els = document.querySelectorAll('.poem:not(.prose)');
-        if (!els.length || !('IntersectionObserver' in window)) { return; }
-
-        var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                entry.target.slPoem.inBand = entry.isIntersecting;
-            });
-        }, { rootMargin: '-40% 0px -40% 0px', threshold: 0 });
-
-        Array.prototype.forEach.call(els, function (el) {
-            var heading = el.querySelector('h1, h2, h3, h4');
-            var poem = {
-                name: (heading ? heading.textContent : el.id || '').replace(/\s+/g, ' ').trim().slice(0, 100),
-                inBand: false,
-                seconds: 0,
-                done: false
-            };
-            el.slPoem = poem;
-            poems.push(poem);
-            observer.observe(el);
-        });
-    }
-
-    // One clock drives both time on page and poem dwell. It only runs while
-    // the tab is visible and the reader has touched the page recently.
+    // Time on page. The clock only runs while the tab is visible and the reader
+    // has touched the page recently.
     function tick() {
         if (!isActive()) { return; }
 
@@ -255,15 +224,6 @@
         if (ENGAGED_STEPS.indexOf(engaged) !== -1) {
             track('engaged', { seconds: engaged });
         }
-
-        poems.forEach(function (poem) {
-            if (poem.done || !poem.inBand) { return; }
-            poem.seconds += 1;
-            if (poem.seconds >= POEM_DWELL) {
-                poem.done = true;
-                track('poem-read', { poem: poem.name, collection: file });
-            }
-        });
     }
 
     // JavaScript errors, so a broken page shows up here before anyone mentions it.
@@ -323,7 +283,6 @@
             reportError(e.reason && e.reason.message ? e.reason.message : e.reason);
         });
 
-        watchPoems();
         window.setInterval(tick, 1000);
     }
 

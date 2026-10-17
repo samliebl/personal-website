@@ -28,11 +28,13 @@
 
     // Umami website IDs by hostname. Analytics stays off for any host whose
     // ID is empty or missing, so localhost, previews and file:// pages never
-    // send anything. The two samliebl.com names share one ID.
+    // send anything. All three names share one ID. Visits to the app are told
+    // apart by an app-visit event on every page load, and every event from it
+    // carries kind=app.
     var WEBSITE_IDS = {
         'samliebl.com': '0e924931-2835-4baf-bfbf-ff09d24abc9d',
         'www.samliebl.com': '0e924931-2835-4baf-bfbf-ff09d24abc9d',
-        'app.samliebl.com': ''
+        'app.samliebl.com': '0e924931-2835-4baf-bfbf-ff09d24abc9d'
     };
 
     // Reading measurements.
@@ -257,6 +259,7 @@
 
         enabled = true;
         if (!debug) { loadTracker(id); }
+        if (kind === 'app') { track('app-visit', { path: location.pathname }); }
 
         document.addEventListener('click', onClick, true);
         document.addEventListener('auxclick', onClick, true);

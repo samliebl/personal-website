@@ -30,8 +30,8 @@
     // ID is empty or missing, so localhost, previews and file:// pages never
     // send anything. The two samliebl.com names share one ID.
     var WEBSITE_IDS = {
-        'samliebl.com': '',
-        'www.samliebl.com': '',
+        'samliebl.com': '0e924931-2835-4baf-bfbf-ff09d24abc9d',
+        'www.samliebl.com': '0e924931-2835-4baf-bfbf-ff09d24abc9d',
         'app.samliebl.com': ''
     };
 
